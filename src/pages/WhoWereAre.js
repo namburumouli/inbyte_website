@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect } from "react";
 import '../styles/WhoWeAre.css';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function WhoWereAre() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
-    <div className='whoweare'>
+    <div data-aos="fade-right" className='whoweare'>
         <div className='margin'>
         <h1 className='title'>w h o w e a r e</h1>
         <h1 className='content'>Your digital patner to create <br/> best design and robust solution for <br/>web, Mobile application</h1>
