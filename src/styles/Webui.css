@@ -1,0 +1,40 @@
+.webuipage{  
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.row {
+    width: auto;
+}
+
+.webuitext{
+    color: white;
+    display:flex;
+    text-align: start;
+    margin-left: 133px;
+    font-family:'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+
+}
+
+.webuidesc{
+    color: white;
+    display:flex;
+    text-align: start;
+    margin-left: 133px;
+    font-family:'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.webuiimage{
+    width: 869px;
+    height: 627px;
+    margin-left: 111px;
+    margin-right: 40px;
+}
