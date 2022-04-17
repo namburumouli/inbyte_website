@@ -19,9 +19,8 @@ function Home() {
         </h2>
       </div>
 
-    
-      <div data-aos="zoom-in-up" >
-      <img  src={Uiiimage} alt="uiimage" />
+      <div data-aos="zoom-in-up">
+        <img src={Uiiimage} alt="uiimage" />
       </div>
     </div>
   );
