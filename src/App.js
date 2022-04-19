@@ -18,6 +18,7 @@ function App() {
         <MobileUi />
         <Webpage />
         <Discussproject />
+        <Sayhello />
         <Routes>
           <Route exact path="/home" element={<Sayhello />}></Route>
         </Routes>

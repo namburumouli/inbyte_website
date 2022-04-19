@@ -14,22 +14,16 @@ function WhoWereAre() {
         <h1 className="content">
           Your digital patner to create <br /> best design and robust solution
           for <br />
-          web, Mobile application
+          Web, Mobile application
         </h1>
         <h2 className="desc">
-          Lorem ipsum dolor sit amet, consectetur <br />
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          <br />
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation
-          <br />
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure
-          <br />
-          dolor in reprehenderit in voluptate velit esse cillum dolore eu <br />
-          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-          <br />
-          sunt in culpa qui officia deserunt mollit anim id est laborum
+          We at InByte, engineer modern businesses to improve everyday life and<br/>
+          combine tech with business to catalyse the best results, our motive is<br/>
+          to create, care and deliver innovative application from scratch to<br/>
+          your satisfaction. We constantly build, imagine and redefine ourselves<br/>
+          to offer robust end-to-end solutions for all applications. We believe<br/>
+          taking responsibility to create a culture that enables exceptional<br/>
+          outcomes.
         </h2>
       </div>
     </div>
