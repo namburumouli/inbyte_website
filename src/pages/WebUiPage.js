@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Webui from "../assets/images/webui.png";
+import Webui from "../assets/images/trillowebui.png";
 import "../styles/Webui.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
