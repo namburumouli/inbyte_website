@@ -1,0 +1,11 @@
+
+.video-wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.video-wrapper video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
