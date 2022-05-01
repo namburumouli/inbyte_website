@@ -1,6 +1,7 @@
 
 .homepage{
     height: 100vh;
+    display: flex;
 }
 
 .homeVideo-wrapper {
@@ -18,41 +19,14 @@
 .homepagetitle{
     position: absolute;
     color: white;
+   
     margin-left: 133px;
     font-family:'Poppins', sans-serif;
     font-weight: 700;
     text-size-adjust: 40;
     font-size: 40px;
     text-align: start;
+    justify-content: center;
+    align-items: center;
   
-}
-
-.container
-{
-    width: 320px;
-    height: 240px;
-    position: relative;
-}
-.container video
-{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 320px;
-    height: 240px;
-    z-index: 1 !important;
-}
-.container .overlay
-{
-    position: absolute;
-    top: 0;
-    left: 10px;
-    width: 100%;
-    z-index: 2;
-}
-.container .overlay h3
-{
-    font-size: 1em;
-    color: #fff;
-    font-weight: bold;
 }

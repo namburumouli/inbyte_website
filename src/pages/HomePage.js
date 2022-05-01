@@ -1,13 +1,14 @@
-import React from "react";
+import React,{ useEffect } from "react";
 import  homeVideo from '../assets/videos/HomeBall.mp4'
 import '../styles/HomePage.css'
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Navbar from "../Components/Navbar";
 
 function HomePage() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-
     <div className="homepage"> 
     <div className='homeVideo-wrapper'>
     <video
