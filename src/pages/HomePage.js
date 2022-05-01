@@ -1,22 +1,31 @@
-import React from 'react'
+import React from "react";
 import  homeVideo from '../assets/videos/HomeBall.mp4'
 import '../styles/HomePage.css'
+import Aos from "aos";
+import "aos/dist/aos.css";
+import Navbar from "../Components/Navbar";
 
 function HomePage() {
   return (
-    <div className='homeVideo-wrapper' >
-     
-        <video
+
+    <div className="homepage"> 
+    <div className='homeVideo-wrapper'>
+    <video
         autoPlay
         loop
         muted >
-           <h1 className='homepagetitle'>Transform ideas into <br/>
-        digital products
-         </h1>
             <source src={homeVideo} type="video/mp4" />
         </video>
+    </div>
+     <div className="homepagetitle">
+       <h1>Transfroms ideas into <br/>
+         digital products.
+       </h1>
+     </div>
+    
         
     </div>
+
   )
 }
 

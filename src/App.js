@@ -8,6 +8,7 @@ import Discussproject from "./pages/Discussproject";
 import Sayhello from "./pages/Sayhello";
 import Videopage from './pages/VideoPage'
 import HomePage from "./pages/HomePage";
+import Sample from "./pages/Sample";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Router>
         <Navbar />
         <HomePage/>
+        <Sample/>
         <WhoWereAre />
         <Videopage/>
         <Home />
