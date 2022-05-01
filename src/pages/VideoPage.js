@@ -12,7 +12,9 @@ function Videopage() {
     <div className='video-wrapper'>
         <video 
         autoPlay
-        loop >
+        loop
+        muted
+         >
       <source src={webVideo} type="video/mp4"/>
         </video>
     </div>

@@ -7,6 +7,7 @@ import WhoWereAre from "./pages/WhoWereAre";
 import Discussproject from "./pages/Discussproject";
 import Sayhello from "./pages/Sayhello";
 import Videopage from './pages/VideoPage'
+import HomePage from "./pages/HomePage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
+        <HomePage/>
         <WhoWereAre />
         <Videopage/>
         <Home />
