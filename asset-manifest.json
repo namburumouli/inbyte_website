@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/inbyte/static/css/main.5c908936.css",
-    "main.js": "/inbyte/static/js/main.13ee0117.js",
-    "static/media/RENDER.mp4": "/inbyte/static/media/RENDER.1d3625182e4e71a6e362.mp4",
-    "static/media/HomeBall.mp4": "/inbyte/static/media/HomeBall.4856db5dc68d3348ea38.mp4",
-    "static/media/trillowebui.png": "/inbyte/static/media/trillowebui.2e12c77a7d5f12b95c78.png",
-    "static/media/applicationdesign.png": "/inbyte/static/media/applicationdesign.03ecda546960e02d0eba.png",
-    "static/media/uiimage.png": "/inbyte/static/media/uiimage.d083e48ff61aeb17c553.png",
-    "static/media/inbytelogo.png": "/inbyte/static/media/inbytelogo.e742843330302877aeb1.png",
-    "static/media/mailbulk.svg": "/inbyte/static/media/mailbulk.cc888b7937e8625c8792b3cfa3d13fa9.svg",
-    "index.html": "/inbyte/index.html",
-    "static/media/phone.svg": "/inbyte/static/media/phone.d4cce8b252e6bcbea56ebfac4e27f4d8.svg",
-    "static/media/sidemenu.svg": "/inbyte/static/media/sidemenu.f8c0f9017bb05fc808e8ab52358a705c.svg",
-    "main.5c908936.css.map": "/inbyte/static/css/main.5c908936.css.map",
-    "main.13ee0117.js.map": "/inbyte/static/js/main.13ee0117.js.map"
+    "main.css": "/inbyte_website/static/css/main.5c908936.css",
+    "main.js": "/inbyte_website/static/js/main.f3be5ee7.js",
+    "static/media/RENDER.mp4": "/inbyte_website/static/media/RENDER.1d3625182e4e71a6e362.mp4",
+    "static/media/HomeBall.mp4": "/inbyte_website/static/media/HomeBall.4856db5dc68d3348ea38.mp4",
+    "static/media/trillowebui.png": "/inbyte_website/static/media/trillowebui.2e12c77a7d5f12b95c78.png",
+    "static/media/applicationdesign.png": "/inbyte_website/static/media/applicationdesign.03ecda546960e02d0eba.png",
+    "static/media/uiimage.png": "/inbyte_website/static/media/uiimage.d083e48ff61aeb17c553.png",
+    "static/media/inbytelogo.png": "/inbyte_website/static/media/inbytelogo.e742843330302877aeb1.png",
+    "static/media/mailbulk.svg": "/inbyte_website/static/media/mailbulk.cc888b7937e8625c8792b3cfa3d13fa9.svg",
+    "index.html": "/inbyte_website/index.html",
+    "static/media/phone.svg": "/inbyte_website/static/media/phone.d4cce8b252e6bcbea56ebfac4e27f4d8.svg",
+    "static/media/sidemenu.svg": "/inbyte_website/static/media/sidemenu.f8c0f9017bb05fc808e8ab52358a705c.svg",
+    "main.5c908936.css.map": "/inbyte_website/static/css/main.5c908936.css.map",
+    "main.f3be5ee7.js.map": "/inbyte_website/static/js/main.f3be5ee7.js.map"
   },
   "entrypoints": [
     "static/css/main.5c908936.css",
-    "static/js/main.13ee0117.js"
+    "static/js/main.f3be5ee7.js"
   ]
 }
