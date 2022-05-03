@@ -1,5 +1,4 @@
 import "./App.css";
-import Navbar from "./Components/Navbar";
 import Home from "./pages/Home";
 import MobileUi from "./pages/Mobileui";
 import Webpage from "./pages/WebUiPage";
@@ -15,7 +14,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
         <HomePage/>
         <Sample/>
         <WhoWereAre />
