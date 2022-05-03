@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/inbyte_website/static/css/main.5c908936.css",
-    "main.js": "/inbyte_website/static/js/main.f3be5ee7.js",
+    "main.js": "/inbyte_website/static/js/main.0a5691fa.js",
     "static/media/RENDER.mp4": "/inbyte_website/static/media/RENDER.1d3625182e4e71a6e362.mp4",
     "static/media/HomeBall.mp4": "/inbyte_website/static/media/HomeBall.4856db5dc68d3348ea38.mp4",
     "static/media/trillowebui.png": "/inbyte_website/static/media/trillowebui.2e12c77a7d5f12b95c78.png",
@@ -13,10 +13,10 @@
     "static/media/phone.svg": "/inbyte_website/static/media/phone.d4cce8b252e6bcbea56ebfac4e27f4d8.svg",
     "static/media/sidemenu.svg": "/inbyte_website/static/media/sidemenu.f8c0f9017bb05fc808e8ab52358a705c.svg",
     "main.5c908936.css.map": "/inbyte_website/static/css/main.5c908936.css.map",
-    "main.f3be5ee7.js.map": "/inbyte_website/static/js/main.f3be5ee7.js.map"
+    "main.0a5691fa.js.map": "/inbyte_website/static/js/main.0a5691fa.js.map"
   },
   "entrypoints": [
     "static/css/main.5c908936.css",
-    "static/js/main.f3be5ee7.js"
+    "static/js/main.0a5691fa.js"
   ]
 }
