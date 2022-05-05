@@ -1,44 +1,69 @@
-.mobileui{  
-    min-height: 100vh;
-    position: relative;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    margin-left: 112px;
+.mobileui {
+  min-height: 100vh;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin-left: 112px;
 }
 
 .row {
-    width: auto;
+  width: auto;
 }
 
-.mobileuititle{
-    color: black;
-    display:flex;
-    text-align: center;
-    margin-left: 133px;
-    font-family:'Poppins', sans-serif;
-    font-weight: 700;
-    text-size-adjust: 40;
-    font-size: 40px;
+.mobileuititle {
+  color: black;
+  display: flex;
+  text-align: center;
+  margin-left: 133px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-size-adjust: 40;
+  font-size: 40px;
 }
 
-.mobileuidesc{
-    color: black;
-    display:flex;
-    text-align: start;
-    margin-left: 133px;
-    font-family:'Poppins', sans-serif;
-    font-weight: 300;
+.mobileuidesc {
+  color: black;
+  display: flex;
+  text-align: start;
+  margin-left: 133px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
 }
 
-.mobileuiimage{
-   
-    margin-top: 30px;
-    display: block;
-    width: 360px;
-    height: 630px;
+.mobileuiimage {
+  margin-top: 30px;
+  display: block;
+  width: 360px;
+  height: 630px;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobileui {
+    display: inline;
+  }
+
+  .mobileui .mobileuititle{
+      font-size: xx-large;
+      margin-left: 50px;
+      margin-right: 10%;
+      display: inline;
+      text-align: center;
+      justify-content: center;
+  }
+
+  .mobileui .mobileuidesc{
+      display: inline;
+      margin-left: 50px;
+      margin-right: 10%;
+      font-size: large;
+      text-align: center;
+      justify-content: center;
+      
+  }
+
 
 }

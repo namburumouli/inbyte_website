@@ -22,9 +22,11 @@ function Mobileui() {
         />
       </div>
       <div data-aos="fade-up-left" className="row">
+        <div>
         <h1 className="mobileuititle">Best In Class Mobile Applications</h1>
+        </div>
         <h2 className="mobileuidesc">
-          We deliver high-quality mobile applications that earns distinction <br/>
+          We deliver high-quality mobile applications that earns distinction 
           of "Best In Class" for Android and iOS with high performance, consistent
           and scalable.
         </h2>

@@ -24,11 +24,8 @@
   margin-top: 23%;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  text-size-adjust: 40;
   font-size: 90px;
   text-align: start;
-  justify-content: center;
-  align-items: center;
   line-height: 0%;
 }
 
@@ -37,11 +34,8 @@
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   margin-top: 11%;
-  text-size-adjust: 40;
   font-size: 90px;
   text-align: start;
-  justify-content: center;
-  align-items: center;
   line-height: 0%;
 }
 
@@ -92,3 +86,27 @@
   padding-left: 5%;
   padding-right: 5%;
 }
+
+@media only screen and (max-width: 600px) {
+  .homepage .homeVideo-wrapper {
+    height: 100%;
+  }
+
+  .homepage .homepagetext {
+    margin-top: 20%;
+    margin-left: 50px;
+  }
+  .homepage .homepagetitle1 {
+    font-size: xx-large;
+  }
+  .homepage .homepagetitle {
+    font-size: xx-large;
+  }
+
+  .homepage .homepagedesc{
+    font-size: larger;
+  }
+}
+
+
+

@@ -21,3 +21,12 @@
   font-size: 36px;
   line-height: 42.19px;
 }
+
+@media only screen and (max-width: 600px) {
+  .discussproject .discussprojecttitle{
+    font-size: xx-large;
+  }
+  .discussproject .discussprojectdesc{
+    font-size: xx-large;
+  }
+}

@@ -39,6 +39,7 @@
   margin-left: 20px;
   text-decoration: underline;
 }
+
 .image {
   margin-left: 198px;
   width: 30.29px;
@@ -72,7 +73,6 @@
   margin-top: 50px;
   margin-left: 50px;
 }
-
 
 .wrapper {
   width: 450px;
@@ -126,7 +126,7 @@ textarea {
   width: 100%;
   bottom: 0;
 }
- .input-data .underline:before {
+.input-data .underline:before {
   position: absolute;
   content: "";
   height: 100%;
@@ -136,7 +136,7 @@ textarea {
   transform-origin: center;
   transition: transform 0.3s ease;
 }
- .input-data input:focus ~ .underline:before,
+.input-data input:focus ~ .underline:before,
 .input-data input:valid ~ .underline:before {
   transform: scaleX(1);
 }
@@ -208,4 +208,37 @@ textarea {
 .buttoni:hover {
   background: gray;
   color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .sayhello {
+    height: 100%;
+    width: 100%;
+  }
+  .sayhello .flex {
+    display: inline;
+  }
+
+  .sayhello .boxed {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 463.33px;
+    height: 596px;
+  }
+
+  .sayhello .wrapper {
+    width: 363px;
+  }
+
+  .sayhello .buttoni {
+    width: 170px;
+    height: 50px;
+  }
+
+  .sayhello .saytext {
+    font-size: 64px;
+  }
+  .sayhello .outlined {
+    font-size: 64px;
+  }
 }

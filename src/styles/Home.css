@@ -1,33 +1,58 @@
-.home{  
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
+.home {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
 }
 
 .home row {
-    width: auto;
-   
+  width: auto;
 }
 
-.hometitle{
-    color: white;
-    display:flex;
-    text-align: start;
-    margin-left: 111px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-
+.hometitle {
+  color: white;
+  display: flex;
+  text-align: start;
+  margin-left: 111px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
 }
 
-.homedesc{
-    color: white;
-    margin-left: 111px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-size: 24px;
+.homedesc {
+  color: white;
+  margin-left: 111px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.homeimage {
+}
+
+@media only screen and (max-width: 600px) {
+  .home {
+    display: inline;
+  }
+
+  .home .homeimage {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  .home .homedesc {
+    font-size: large;
+    margin-left: 50px;
+    margin-right: 10%;
+  }
+
+  .home .hometitle {
+    font-size: x-large;
+    margin-left: 50px;
+    margin-right: 10%;
+  }
 }

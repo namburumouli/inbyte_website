@@ -21,7 +21,7 @@ function Home() {
       </div>
 
       <div data-aos="zoom-in-up">
-        <img src={Uiiimage} alt="uiimage" />
+        <img src={Uiiimage} className="homeimage" alt="uiimage" />
       </div>
     </div>
   );
