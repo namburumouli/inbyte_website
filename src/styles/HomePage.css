@@ -1,32 +1,94 @@
-
-.homepage{
-    height: 100vh;
-    display: flex;
+.homepage {
+  height: 100vh;
 }
 
 .homeVideo-wrapper {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
 }
 
 .homeVideo-wrapper video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
-.homepagetitle{
-    position: absolute;
-    color: white;
-    margin-top: 133px;
-    margin-left: 133px;
-    font-family:'Poppins', sans-serif;
-    font-weight: 700;
-    text-size-adjust: 40;
-    font-size: 40px;
-    text-align: start;
-    justify-content: center;
-    align-items: center;
-  
+.homepagetext {
+  position: absolute;
+  margin-left: 80px;
+}
+
+.homepagetitle {
+  color: white;
+  margin-top: 23%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-size-adjust: 40;
+  font-size: 90px;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+  line-height: 0%;
+}
+
+.homepagetitle1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-top: 11%;
+  text-size-adjust: 40;
+  font-size: 90px;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+  line-height: 0%;
+}
+
+.homepagedesc {
+  margin-top: 10%;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: start;
+}
+
+.homepagebutton {
+  background-color: white;
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+  border-radius: 30px;
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  text-align: center;
+  margin-top: 0.625rem;
+  border-top-left-radius: 1.71875rem;
+  border-top-right-radius: 1.71875rem;
+  border-bottom-right-radius: 1.71875rem;
+  border-bottom-left-radius: 1.71875rem;
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  padding-left: 5%;
+  padding-right: 5%;
 }

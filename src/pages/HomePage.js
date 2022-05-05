@@ -17,14 +17,24 @@ function HomePage() {
           <source src={homeVideo} type="video/mp4" />
         </video>
       </div>
-      <div >
+      <div>
         <Navbar />
       </div>
-      <div className="homepagetitle">
-        <h1>
-          Transfrom ideas into <br />
-          digital products.
+      <div className="homepagetext">
+        <div>
+        <h1 className="homepagetitle">
+          Transfrom ideas into        
         </h1>
+        <h1 className="homepagetitle1">
+        digital products.
+        </h1>
+        </div>
+        <h2 className="homepagedesc">
+          We create realistic and futuristic products which offers <br/> best digital
+          solutions to make an impact on next-generation.{" "}
+        </h2>
+        <button type="Button" className="homepagebutton">GET IN TOUCH</button>
+        
       </div>
     </div>
   );
