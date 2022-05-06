@@ -7,7 +7,6 @@
   align-items: center;
   justify-content: center;
   background-color: white;
- 
 }
 
 .row {
@@ -40,7 +39,6 @@
   width: 360px;
   height: 630px;
   margin-left: 112px;
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -48,26 +46,23 @@
     display: inline;
   }
 
-  .mobileui .mobileuititle{
-      font-size: xx-large;
-      margin-left: 50px;
-      margin-right: 10%;
-      display: inline;
-      text-align: center;
-      justify-content: center;
+  .mobileui .mobileuititle {
+    margin-top: 10%;
+    font-size: large;
+    margin-left: 50px;
+    margin-right: 10%;
+    text-align: center;
+    justify-content: center;
   }
 
-  .mobileui .mobileuidesc{
-      display: inline;
-      margin-left: 50px;
-      margin-right: 10%;
-      font-size: large;
-      text-align: center;
-      justify-content: center;
-      
+  .mobileui .mobileuidesc {
+    margin-left: 50px;
+    margin-right: 10%;
+    font-size: large;
+    text-align: center;
+    justify-content: center;
   }
 }
-
 
 @media only screen and (max-width: 900px) {
   .mobileui {
@@ -75,24 +70,18 @@
     margin-top: 10%;
   }
 
-  .mobileui .mobileuititle{
-      font-size: xx-large;
-      margin-left: 50px;
-      margin-right: 10%;
-      display: inline;
-      text-align: center;
-      justify-content: center;
+  .mobileui .mobileuititle {
+    margin-top: 10%;
+    font-size: x-large;
+    margin-left: 50px;
+    margin-right: 10%;
+    text-align: center;
+    justify-content: center;
   }
 
-  .mobileui .mobileuidesc{
-      display: inline;
-      margin-left: 50px;
-      margin-right: 10%;
-      font-size: large;
-      text-align: center;
-      justify-content: center;
-      
+  .mobileui .mobileuidesc {
+    margin-left: 50px;
+    margin-right: 10%;
+    font-size: medium;
   }
-
-
 }
