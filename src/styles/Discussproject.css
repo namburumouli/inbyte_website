@@ -30,3 +30,12 @@
     font-size: xx-large;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .discussproject .discussprojecttitle{
+    font-size: xx-large;
+  }
+  .discussproject .discussprojectdesc{
+    font-size: xx-large;
+  }
+}
