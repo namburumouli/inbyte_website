@@ -67,12 +67,11 @@
 @media only screen and (max-width: 900px) {
   .mobileui {
     display: inline;
-    margin-top: 10%;
   }
 
   .mobileui .mobileuititle {
     margin-top: 10%;
-    font-size: x-large;
+    font-size: large;
     margin-left: 50px;
     margin-right: 10%;
     text-align: center;
@@ -82,6 +81,8 @@
   .mobileui .mobileuidesc {
     margin-left: 50px;
     margin-right: 10%;
-    font-size: medium;
+    font-size: large;
+    text-align: center;
+    justify-content: center;
   }
 }
