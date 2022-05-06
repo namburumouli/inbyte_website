@@ -48,6 +48,12 @@
 @media only screen and (max-width: 900px) {
   .discussproject{
     height: 200px;
+    border-top-left-radius: 1.71875rem;
+    border-top-right-radius: 1.71875rem;
+    border-bottom-right-radius: 1.71875rem;
+    border-bottom-left-radius: 1.71875rem;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .discussproject .discussprojecttitle {
