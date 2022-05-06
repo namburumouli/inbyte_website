@@ -8,8 +8,9 @@
   text-align: center;
   font-family: "Podkova", serif;
   font-size: 48px;
-  margin-top: 57px;
-  font-weight: bold;
+  margin-top: 6%;
+  font-weight: bolder;
+  line-height: 0%;
 }
 
 .discussprojectdesc {
@@ -19,23 +20,41 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 100;
   font-size: 36px;
-  line-height: 42.19px;
+  line-height: 120%;
+  margin-top: 2%;
 }
 
 @media only screen and (max-width: 600px) {
-  .discussproject .discussprojecttitle{
+
+  .discussproject{
+    height: 200px;
+    border-top-left-radius: 1.71875rem;
+    border-top-right-radius: 1.71875rem;
+    border-bottom-right-radius: 1.71875rem;
+    border-bottom-left-radius: 1.71875rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .discussproject .discussprojecttitle {
+    margin-top: 13%;
     font-size: xx-large;
   }
-  .discussproject .discussprojectdesc{
-    font-size: xx-large;
+  .discussproject .discussprojectdesc {
+    font-size: large;
   }
 }
 
 @media only screen and (max-width: 900px) {
-  .discussproject .discussprojecttitle{
+  .discussproject{
+    height: 200px;
+  }
+
+  .discussproject .discussprojecttitle {
+    margin-top: 13%;
     font-size: xx-large;
   }
-  .discussproject .discussprojectdesc{
-    font-size: xx-large;
+  .discussproject .discussprojectdesc {
+    font-size: large;
   }
 }
