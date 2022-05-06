@@ -17,12 +17,12 @@ function WhoWereAre() {
           Web, Mobile application
         </h1>
         <h2 className="desc">
-          We at InByte, engineer modern businesses to improve everyday life and<br/>
-          combine tech with business to catalyse the best results, our motive is<br/>
-          to create, care and deliver innovative application from scratch to<br/>
-          your satisfaction. We constantly build, imagine and redefine ourselves<br/>
-          to offer robust end-to-end solutions for all applications. We believe<br/>
-          taking responsibility to create a culture that enables exceptional<br/>
+          We at InByte, engineer modern businesses to improve everyday life and
+          combine tech with business to catalyse the best results, our motive is
+          to create, care and deliver innovative application from scratch to
+          your satisfaction. We constantly build, imagine and redefine ourselves
+          to offer robust end-to-end solutions for all applications. We believe
+          taking responsibility to create a culture that enables exceptional
           outcomes.
         </h2>
       </div>
