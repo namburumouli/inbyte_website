@@ -12,7 +12,7 @@ function Home() {
   return (
     <div className="home">
       <div data-aos="fade-right" className="row">
-        <h1 className="hometitle">Stunning Ui/UX design</h1>
+        <h1 className="hometitle">Stunning UI/UX design</h1>
         <h2 className="homedesc">
           we design best visual presentation of content which emerges
           application experience and attract the attention with visual
