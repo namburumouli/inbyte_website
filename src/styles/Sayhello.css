@@ -242,3 +242,36 @@ textarea {
     font-size: 64px;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .sayhello {
+    height: 100%;
+    width: 100%;
+  }
+  .sayhello .flex {
+    display: inline;
+  }
+
+  .sayhello .boxed {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 463.33px;
+    height: 596px;
+  }
+
+  .sayhello .wrapper {
+    width: 363px;
+  }
+
+  .sayhello .buttoni {
+    width: 170px;
+    height: 50px;
+  }
+
+  .sayhello .saytext {
+    font-size: 64px;
+  }
+  .sayhello .outlined {
+    font-size: 64px;
+  }
+}
