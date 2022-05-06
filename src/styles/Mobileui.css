@@ -64,6 +64,32 @@
       justify-content: center;
       
   }
+}
+
+
+@media only screen and (max-width: 900px) {
+  .mobileui {
+    display: inline;
+  }
+
+  .mobileui .mobileuititle{
+      font-size: xx-large;
+      margin-left: 50px;
+      margin-right: 10%;
+      display: inline;
+      text-align: center;
+      justify-content: center;
+  }
+
+  .mobileui .mobileuidesc{
+      display: inline;
+      margin-left: 50px;
+      margin-right: 10%;
+      font-size: large;
+      text-align: center;
+      justify-content: center;
+      
+  }
 
 
 }

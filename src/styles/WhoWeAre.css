@@ -32,6 +32,30 @@
   margin-top: 33px;
 }
 
+@media only screen and (max-width: 900px) {
+  .whoweare {
+    height: 100%;
+    width: 100%;
+  }
+  .whoweare .margin {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .whoweare .title{
+      font-size: x-large;
+  }
+
+  .whoweare .desc {
+    font-size: 15px;
+
+  }
+
+  .whoweare .content {
+    font-size: x-large;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .whoweare {
     height: 100%;
@@ -43,7 +67,7 @@
   }
 
   .whoweare .title{
-      font-size: larger;
+      font-size: large;
   }
 
   .whoweare .desc {

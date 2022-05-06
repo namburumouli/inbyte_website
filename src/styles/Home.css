@@ -56,3 +56,27 @@
     margin-right: 10%;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .home {
+    display: inline;
+  }
+
+  .home .homeimage {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  .home .homedesc {
+    font-size: large;
+    margin-left: 50px;
+    margin-right: 10%;
+  }
+
+  .home .hometitle {
+    font-size: x-large;
+    margin-left: 50px;
+    margin-right: 10%;
+  }
+}
