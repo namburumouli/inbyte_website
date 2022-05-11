@@ -1,0 +1,65 @@
+.cardpage {
+  height: 126px;
+  width: 398px;
+}
+
+.module-border-wrap-card1 {
+  padding: 1rem;
+  background: linear-gradient(to right, #ecd616, #ed9666);
+  padding: 1.5px;
+  border-radius: 5px;
+}
+
+.module-border-wrap-card2 {
+  padding: 1rem;
+  background: linear-gradient(to right, #dd1919, #007df0);
+  padding: 1.5px;
+  border-radius: 5px;
+}
+
+.module-border-wrap-card3 {
+  padding: 1rem;
+  background: linear-gradient(to right, #ED9666, #FFFFFF);
+  padding: 1.5px;
+  border-radius: 5px;
+}
+
+.module-border-wrap-card4 {
+  padding: 1rem;
+  background: linear-gradient(to right, #007DF0, #ECD616);
+  padding: 1.5px;
+  border-radius: 5px;
+}
+
+.module-border-wrap-card5 {
+  padding: 1rem;
+  background: linear-gradient(to right, #FFFFFF, #FF4620);
+  padding: 1.5px;
+  border-radius: 5px;
+}
+
+.module {
+  background: black;
+  color: white;
+  display: flex;
+}
+
+.cardpageimage{
+  display: block;
+  height: 40px;
+  width: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 53px;
+}
+
+.cardpagetitle {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 5%;
+}

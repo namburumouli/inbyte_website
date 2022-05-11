@@ -7,7 +7,8 @@ import Discussproject from "./pages/Discussproject";
 import Sayhello from "./pages/Sayhello";
 import Videopage from './pages/VideoPage'
 import HomePage from "./pages/HomePage";
-import Sample from "./pages/Sample";
+import Footer from "./pages/Footer";
+import WhatWeDoPage from "./pages/WhatWeDoPage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
     <div className="App">
       <Router>
         <HomePage/>
-        <Sample/>
+        <WhatWeDoPage/>
         <WhoWereAre />
         <Videopage/>
         <Home />
@@ -23,6 +24,7 @@ function App() {
         <Webpage />
         <Discussproject />
         <Sayhello />
+        <Footer/>
         <Routes>
           <Route exact path="/home" element={<Videopage/>}></Route>
         </Routes>

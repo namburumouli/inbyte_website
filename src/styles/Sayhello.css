@@ -248,10 +248,6 @@ textarea {
     height: 100%;
     width: 100%;
   }
-  .sayhello .flex {
-    display: inline;
-  }
-
   .sayhello .boxed {
     margin-left: 50px;
     margin-right: 50px;
@@ -269,9 +265,9 @@ textarea {
   }
 
   .sayhello .saytext {
-    font-size: 64px;
+    font-size: 50px;
   }
   .sayhello .outlined {
-    font-size: 64px;
+    font-size: 50px;
   }
 }
