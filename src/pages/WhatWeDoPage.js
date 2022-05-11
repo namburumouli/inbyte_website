@@ -7,6 +7,7 @@ import AsstiveVector from "../assets/images/whatwedo/assistive-listening-systems
 import ComputerVector from "../assets/images/whatwedo/computervector.png";
 import MobileVector from "../assets/images/whatwedo/mobilevector.png";
 import SpeakerVector from "../assets/images/whatwedo/speakervector.png";
+import ArrowVector from "../assets/images/whatwedo/rightarrowvector.png";
 
 function WhatWeDoPage() {
   const [active, setActive] = useState("UI/UX & Graphic Design");
@@ -77,9 +78,13 @@ function WhatWeDoPage() {
           <br />
           {activeDesSecPara}
         </p>
-        <button className="reachusbutton">Reach us</button>
+        <div>
+          <button className="reachusbutton">
+            Reach us <img className="reachusimage" src={ArrowVector} />
+          </button>
+        </div>
       </div>
-      
+
       <Scrollbars style={{ width: 500, height: 600 }}>
         <button className="whatwedobutton" onClick={activeUI}>
           <Customcardpage

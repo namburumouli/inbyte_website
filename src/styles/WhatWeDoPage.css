@@ -54,15 +54,23 @@
   padding: 0;
 }
 
-.reachusbutton{
+.reachusbutton {
   background-color: white;
   margin-left: 100px;
   height: 49px;
   width: 198px;
+  font-weight: 400;
   border-radius: 11px;
   font-family: "Poppins", sans-serif;
-  font-size: 26px;
+  font-size: 18px;
   margin-top: auto;
   margin-bottom: auto;
   border-color: white;
+}
+
+.reachusimage {
+  width: 8px;
+  height: 16px;
+  padding-left: 10px;
+  opacity: 0.2;
 }
