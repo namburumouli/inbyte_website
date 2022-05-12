@@ -210,6 +210,7 @@ textarea {
   color: black;
 }
 
+
 @media only screen and (max-width: 600px) {
   .sayhello {
     height: 100%;
@@ -270,4 +271,4 @@ textarea {
   .sayhello .outlined {
     font-size: 50px;
   }
-}
+} 
