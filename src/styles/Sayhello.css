@@ -136,7 +136,7 @@ textarea {
   transform-origin: center;
   transition: transform 0.3s ease;
 }
-.input-data input:focus ~ .underline:before,
+*/.input-data input:focus ~ .underline:before,
 .input-data input:valid ~ .underline:before {
   transform: scaleX(1);
 }
@@ -238,37 +238,79 @@ textarea {
 
   .sayhello .saytext {
     font-size: 64px;
+    margin-left: 10px;
   }
   .sayhello .outlined {
     font-size: 64px;
+    margin-left: 100%;
   }
 }
 
 @media only screen and (max-width: 900px) {
   .sayhello {
     height: 100%;
-    width: 100%;
   }
   .sayhello .boxed {
-    margin-left: 50px;
-    margin-right: 50px;
-    width: 463.33px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    margin-left: 40px;
+    margin-right: 20px;
+    width: 300.33px;
     height: 596px;
   }
 
   .sayhello .wrapper {
-    width: 363px;
+    width: 250px;
   }
 
+  .sayhello .outlined{
+    margin-top: 40px;
+  }
+
+
+  .sayhello .image{
+    position:absolute;
+    margin-left: 50px;
+    width: 22.29px;
+    height: 18.75px;
+    margin-top: 7%;
+  }
+
+  .sayhello .info{
+    font-size: large;
+    margin-left: 90px;
+    margin-top: 20px;
+    text-align: start;
+    padding-top: 5%;
+  }
   .sayhello .buttoni {
-    width: 170px;
-    height: 50px;
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    margin-left: 120px;
   }
 
   .sayhello .saytext {
     font-size: 50px;
+    text-align: start;
+    margin-left: 60px;
   }
   .sayhello .outlined {
     font-size: 50px;
+    margin-left: 50px;
+    display: block;
+    text-align: start;
+
+  }
+  .sayhello .projectinquirestext{
+    font-size: 24px;
+  }
+
+  .sayhello .input-data {
+    font-size: small;
+    margin-left: 20px;
+  }
+  .sayhello .input-data input:focus ~ label{
+    font-size: small;
   }
 } 

@@ -69,14 +69,13 @@
   }
 
   .home .homedesc {
-    font-size: large;
+    font-size: medium;
     margin-left: 50px;
     margin-right: 10%;
   }
 
   .home .hometitle {
-    font-size: x-large;
-    margin-left: 25%;
-    margin-right: 10%;
+    font-size: 36px;
+    margin-left: 50px;
   }
 }

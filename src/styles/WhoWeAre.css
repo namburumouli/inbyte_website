@@ -1,5 +1,5 @@
 .whoweare {
-  min-height: 100vh;
+  min-height: 100%;
   background-color: black;
 }
 
@@ -36,7 +36,6 @@
 @media only screen and (max-width: 900px) {
   .whoweare {
     height: 100%;
-    width: 100%;
   }
   .whoweare .margin {
     margin-left: 50px;
@@ -69,6 +68,7 @@
 
   .whoweare .title{
       font-size: large;
+      margin-top: 3%;
   }
 
   .whoweare .desc {

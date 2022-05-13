@@ -19,21 +19,21 @@
 
 .module-border-wrap-card3 {
   padding: 1rem;
-  background: linear-gradient(to right, #ED9666, #FFFFFF);
+  background: linear-gradient(to right, #ed9666, #ffffff);
   padding: 1.5px;
   border-radius: 5px;
 }
 
 .module-border-wrap-card4 {
   padding: 1rem;
-  background: linear-gradient(to right, #007DF0, #ECD616);
+  background: linear-gradient(to right, #007df0, #ecd616);
   padding: 1.5px;
   border-radius: 5px;
 }
 
 .module-border-wrap-card5 {
   padding: 1rem;
-  background: linear-gradient(to right, #FFFFFF, #FF4620);
+  background: linear-gradient(to right, #ffffff, #ff4620);
   padding: 1.5px;
   border-radius: 5px;
 }
@@ -44,7 +44,37 @@
   display: flex;
 }
 
-.cardpageimage{
+.module1 {
+  background: linear-gradient(to right, #b81212, #4e1e04);
+  color: white;
+  display: flex;
+}
+
+.module2 {
+  background: linear-gradient(to right, #ECD616, #5B5200);
+  color: white;
+  display: flex;
+}
+
+.module3 {
+  background: linear-gradient(to right, #097BE5, #001629);
+  color: white;
+  display: flex;
+}
+
+.module4 {
+  background: linear-gradient(to right, #ED9666, #4E1E04);
+  color: white;
+  display: flex;
+}
+
+.module5 {
+  background: linear-gradient(to right, #F93995, #6B0034);
+  color: white;
+  display: flex;
+}
+
+.cardpageimage {
   display: block;
   height: 40px;
   width: 40px;
@@ -62,4 +92,14 @@
   margin-top: auto;
   margin-bottom: auto;
   padding: 5%;
+}
+
+@media only screen and (max-width: 900px) {
+  .cardpage{
+    height: 100px;
+    width: 298px;
+  }
+  .cardpage .cardpagetitle{
+    font-size: large;
+  }
 }

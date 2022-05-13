@@ -87,7 +87,7 @@
   padding-right: 5%;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .homepage .homeVideo-wrapper {
     height: 100%;
   }
@@ -97,7 +97,7 @@
     margin-left: 50px;
   }
   .homepage .homepagetitle1 {
-    font-size: xx-large;
+    font-size: 10px;
   }
   .homepage .homepagetitle {
     font-size: xx-large;
@@ -111,9 +111,9 @@
     font-size: small;
   }
  
-}
+} */
 
-
+/* 
  @media only screen and (min-width: 600px) {
   .homepage .homeVideo-wrapper {
     height: 100%;
@@ -134,7 +134,7 @@
   .homepage .homepagedesc{
     font-size: larger;
   }
-} 
+}  */
 
 
 @media only screen and (max-width: 900px) {
@@ -144,14 +144,15 @@
   }
 
   .homepage .homepagetext {
-    margin-top: 20%;
+    margin-top: 30%;
     margin-left: 50px;
+    margin-right: 10px;
   }
   .homepage .homepagetitle1 {
-    font-size: xx-large;
+    font-size: 26px;
   }
   .homepage .homepagetitle {
-    font-size: xx-large;
+    font-size: 26px;
   }
 
   .homepage .homepagedesc{

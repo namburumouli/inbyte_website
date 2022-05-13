@@ -12,11 +12,11 @@ function HomePage() {
   }, []);
   return (
     <div className="homepage">
-      <div className="homeVideo-wrapper">
+      {/* <div className="homeVideo-wrapper">
         <video autoPlay loop muted>
           <source src={homeVideo} type="video/mp4" />
         </video>
-      </div>
+      </div> */}
       <div>
         <Navbar />
       </div>

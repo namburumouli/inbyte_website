@@ -16,8 +16,8 @@ function App() {
     <div className="App">
       <Router>
         <HomePage/>
-        <WhatWeDoPage/>
         <WhoWereAre />
+        <WhatWeDoPage/>    
         <Videopage/>
         <Home />
         <MobileUi />

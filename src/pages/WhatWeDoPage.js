@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BrowserView, MobileView } from "react-device-detect";
 import "../styles/WhatWeDoPage.css";
 import Customcardpage from "../Components/card";
 import { Scrollbars } from "react-custom-scrollbars-2";
@@ -17,6 +18,11 @@ function WhatWeDoPage() {
   const [activeDesSecPara, setActiveDesSecPara] = useState(
     "We do prototyping, wireframing, market research for your digital idea or product."
   );
+  const [activeModule1, setActiveModule1] = useState("module1");
+  const [activeModule2, setActiveModule2] = useState("module");
+  const [activeModule3, setActiveModule3] = useState("module");
+  const [activeModule4, setActiveModule4] = useState("module");
+  const [activeModule5, setActiveModule5] = useState("module");
 
   const activeUI = () => {
     setActive("UI/UX & Graphic Design");
@@ -26,6 +32,11 @@ function WhatWeDoPage() {
     setActiveDesSecPara(
       "We do prototyping, wireframing, market research for your digital idea or product."
     );
+    setActiveModule1("module1");
+    setActiveModule2("module");
+    setActiveModule3("module");
+    setActiveModule4("module");
+    setActiveModule5("module");
   };
 
   const activeAppDevelopment = () => {
@@ -36,6 +47,11 @@ function WhatWeDoPage() {
     setActiveDesSecPara(
       "We have a great expertise team with several years of experience to do all kinds of mobile apps for Android and IOS using Flutter, React Native and Ionic, etc."
     );
+    setActiveModule2("module2");
+    setActiveModule1("module");
+    setActiveModule3("module");
+    setActiveModule4("module");
+    setActiveModule5("module");
   };
 
   const activeWebDevelopment = () => {
@@ -46,6 +62,11 @@ function WhatWeDoPage() {
     setActiveDesSecPara(
       "We do web apps with all kinds of frameworks like Angular, React, Laravel, Node, Java and CMS, LMS using WordPress,Drupal etc. "
     );
+    setActiveModule3("module3");
+    setActiveModule2("module");
+    setActiveModule1("module");
+    setActiveModule4("module");
+    setActiveModule5("module");
   };
 
   const activeDigitalMarketing = () => {
@@ -56,6 +77,11 @@ function WhatWeDoPage() {
     setActiveDesSecPara(
       " We show analytics of your business growth for every 15 days with a crystal clear stattics."
     );
+    setActiveModule4("module4");
+    setActiveModule2("module");
+    setActiveModule3("module");
+    setActiveModule1("module");
+    setActiveModule5("module");
   };
 
   const activeStartegy = () => {
@@ -66,6 +92,20 @@ function WhatWeDoPage() {
     setActiveDesSecPara(
       "Consultancy and guidance are the pillars for a new idea to research whether the product or service will exist and grow in the market based on the current trend."
     );
+    setActiveModule5("module5");
+    setActiveModule2("module");
+    setActiveModule3("module");
+    setActiveModule4("module");
+    setActiveModule1("module");
+  };
+
+  /* scroll functionality */
+
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -79,57 +119,144 @@ function WhatWeDoPage() {
           {activeDesSecPara}
         </p>
         <div>
-          <button className="reachusbutton">
+          <button className="reachusbutton" onClick={scrollToBottom}>
             Reach us <img className="reachusimage" src={ArrowVector} />
           </button>
         </div>
+        {activeUI}
       </div>
 
-      <Scrollbars style={{ width: 500, height: 600 }}>
-        <button className="whatwedobutton" onClick={activeUI}>
-          <Customcardpage
-            image={MenuVector}
-            style={"module-border-wrap-card1"}
-            title={"UI/UX & Graphic Design"}
-          />
-        </button>
+      {/* style={{ width: 1200, height: 150 }} */}
+      <div className="browerview">
+        <Scrollbars style={{ width: 1200, height: 150 }}>
+          <BrowserView>
+            <div className="whatwedovertical">
+              <div className="whatwedofirstcard">
+                <button className="whatwedobutton" onClick={activeUI}>
+                  <Customcardpage
+                    image={MenuVector}
+                    module={activeModule1}
+                    style={"module-border-wrap-card1"}
+                    title={"UI/UX & Graphic Design"}
+                  />
+                </button>
+              </div>
 
-        <div className="whatwedosecoundcard">
-          <button className="whatwedobutton" onClick={activeAppDevelopment}>
-            <Customcardpage
-              image={MobileVector}
-              style={"module-border-wrap-card2"}
-              title={"Android & IOS App Development"}
-            />
-          </button>
-        </div>
-        <div className="whatwedomargin">
-          <button className="whatwedobutton" onClick={activeWebDevelopment}>
-            <Customcardpage
-              image={ComputerVector}
-              style={"module-border-wrap-card3"}
-              title={"Web Application Development"}
-            />
-          </button>
-        </div>
-        <div className="whatwedomargin">
-          <button className="whatwedobutton" onClick={activeDigitalMarketing}>
-            <Customcardpage
-              image={SpeakerVector}
-              style={"module-border-wrap-card4"}
-              title={"Digital Marketing for all Businesses"}
-            />
-          </button>
-        </div>
-        <div className="whatwedomargin">
-          <button className="whatwedobutton" onClick={activeStartegy}>
-            <Customcardpage
-              image={AsstiveVector}
-              style={"module-border-wrap-card5"}
-              title={"Strategy & Consultancy"}
-            />
-          </button>
-        </div>
+              <div className="whatwedomargin">
+                <button
+                  className="whatwedobutton"
+                  onClick={activeAppDevelopment}
+                >
+                  <Customcardpage
+                    image={MobileVector}
+                    module={activeModule2}
+                    style={"module-border-wrap-card2"}
+                    title={"Android & IOS App Development"}
+                  />
+                </button>
+              </div>
+              <div className="whatwedomargin">
+                <button
+                  className="whatwedobutton"
+                  onClick={activeWebDevelopment}
+                >
+                  <Customcardpage
+                    image={ComputerVector}
+                    module={activeModule3}
+                    style={"module-border-wrap-card3"}
+                    title={"Web Application Development"}
+                  />
+                </button>
+              </div>
+              <div className="whatwedomargin">
+                <button
+                  className="whatwedobutton"
+                  onClick={activeDigitalMarketing}
+                >
+                  <Customcardpage
+                    image={SpeakerVector}
+                    module={activeModule4}
+                    style={"module-border-wrap-card4"}
+                    title={"Digital Marketing for all Businesses"}
+                  />
+                </button>
+              </div>
+              <div className="whatwedomargin">
+                <button className="whatwedobutton" onClick={activeStartegy}>
+                  <Customcardpage
+                    image={AsstiveVector}
+                    module={activeModule5}
+                    style={"module-border-wrap-card5"}
+                    title={"Strategy & Consultancy"}
+                  />
+                </button>
+              </div>
+            </div>
+          </BrowserView>
+        </Scrollbars>
+      </div>
+
+      {/* for mobile MobileView */}
+
+      <Scrollbars>
+        <MobileView>
+          <div className="whatwedovertical">
+            <div className="whatwedomargin">
+              <button className="whatwedobutton" onClick={activeUI}>
+                <Customcardpage
+                  image={MenuVector}
+                  module={activeModule1}
+                  style={"module-border-wrap-card1"}
+                  title={"UI/UX & Graphic Design"}
+                />
+              </button>
+            </div>
+
+            <div className="whatwedomargin">
+              <button className="whatwedobutton" onClick={activeAppDevelopment}>
+                <Customcardpage
+                  image={MobileVector}
+                  module={activeModule2}
+                  style={"module-border-wrap-card2"}
+                  title={"Android & IOS App Development"}
+                />
+              </button>
+            </div>
+            <div className="whatwedomargin">
+              <button className="whatwedobutton" onClick={activeWebDevelopment}>
+                <Customcardpage
+                  image={ComputerVector}
+                  module={activeModule3}
+                  style={"module-border-wrap-card3"}
+                  title={"Web Application Development"}
+                />
+              </button>
+            </div>
+            <div className="whatwedomargin">
+              <button
+                className="whatwedobutton"
+                onClick={activeDigitalMarketing}
+              >
+                <Customcardpage
+                  image={SpeakerVector}
+                  module={activeModule4}
+                  style={"module-border-wrap-card4"}
+                  title={"Digital Marketing for all Businesses"}
+                />
+              </button>
+            </div>
+            <div className="whatwedomargin">
+              <button className="whatwedobutton" onClick={activeStartegy}>
+                <Customcardpage
+                  image={AsstiveVector}
+                  module={activeModule5}
+                  style={"module-border-wrap-card5"}
+                  title={"Strategy & Consultancy"}
+                />
+              </button>
+            </div>
+          </div>
+        </MobileView>
       </Scrollbars>
     </div>
   );

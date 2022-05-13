@@ -1,4 +1,82 @@
 .footer{
-    height: 100%;
+    height: 200%;
     display: flex;
+    margin-top: 5%;
+    margin-left: 50px;
+}
+
+.fotterimage{
+    padding-left: 2%;
+    padding-bottom: 2%;
+    height: 33px;
+}
+
+.fotterimage fb{ 
+    width: 23.96px;
+    margin-bottom: 10px;
+   
+}
+
+.fotterimage insta{
+    width: 35.9px;
+}
+
+.fotterimage twitter{
+    width: 41px;
+    margin-bottom: 2%;
+}
+
+.fotterimage youtube{
+
+    width: 38.87px;
+}
+
+.fotterimage in{
+    width: 35px;
+}
+
+.footertext{
+    color: white;
+    align-items: center;
+    display: flex;
+    padding-bottom: 2%;
+    text-align: end;
+    padding-left: 36%;
+}
+
+.footerbutton{
+    background: none;
+    border: none;
+    margin-bottom: 20px;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .footer {
+        display: inline;
+        margin-left: 20px;
+        margin-top: 20%;
+    }
+
+    .footer .footertext{
+        text-align: center;
+        padding-left: 0px;
+        font-size: 12px;
+    }
+    .footer .fotterimage .fb{
+        display: none;
+        width: 9.96px;
+        margin-bottom: 10px;
+    }
+    .footer .fotterimage insta{
+        display: block;
+        width: 9.96px;
+        margin-bottom: 10px;
+    }
+
+    .footer .fotterimage{
+        margin-left: 12px;
+    }
 }

@@ -2,8 +2,8 @@
     width: 100%;
     height: 100px;
     display: flex;
-    flex-direction: row;
-    position: absolute;
+    flex-direction: row;  
+    position:absolute;
   }
   
   .navbar .leftSide {

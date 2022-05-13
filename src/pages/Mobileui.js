@@ -6,16 +6,17 @@ import "aos/dist/aos.css";
 
 function Mobileui() {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000 });
   }, []);
   return (
     <div
-      data-aos="fade-up"
+      //  data-aos="fade-up"
       data-aos-anchor-placement="top-center"
       className="mobileui"
     >
-      <div data-aos="fade-up-right">
+      <div>
         <img
+          data-aos="fade-up-right"
           className="mobileuiimage"
           src={ApplicationDesign}
           alt="applicationdesign"
@@ -23,11 +24,11 @@ function Mobileui() {
       </div>
       <div data-aos="fade-up-left" className="row">
         <div>
-        <h1 className="mobileuititle">Best In Class Mobile Applications</h1>
+          <h1 className="mobileuititle">Best In Class Mobile Applications</h1>
         </div>
         <h2 className="mobileuidesc">
-          We deliver high-quality mobile applications that earns distinction 
-          of "Best In Class" for Android and iOS with high performance, consistent
+          We deliver high-quality mobile applications that earns distinction of
+          "Best In Class" for Android and iOS with high performance, consistent
           and scalable.
         </h2>
       </div>
