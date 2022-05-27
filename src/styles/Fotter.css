@@ -1,82 +1,98 @@
-.footer{
-    height: 200%;
-    display: flex;
-    margin-top: 5%;
-    margin-left: 50px;
+.footer {
+  height: 200%;
+  display: flex;
+  margin-top: 5%;
+  margin-left: 50px;
 }
 
-.fotterimage{
-    padding-left: 2%;
-    padding-bottom: 2%;
-    height: 33px;
+.fotterimage {
+  padding-left: 2%;
+  padding-bottom: 2%;
+  height: 33px;
 }
 
-.fotterimage fb{ 
-    width: 23.96px;
-    margin-bottom: 10px;
-   
+.fotterimage fb {
+  width: 23.96px;
+  margin-bottom: 10px;
 }
 
-.fotterimage insta{
-    width: 35.9px;
+.fotterimage insta {
+  width: 35.9px;
 }
 
-.fotterimage twitter{
-    width: 41px;
-    margin-bottom: 2%;
+.fotterimage twitter {
+  width: 41px;
+  margin-bottom: 2%;
 }
 
-.fotterimage youtube{
-
-    width: 38.87px;
+.fotterimage youtube {
+  width: 38.87px;
 }
 
-.fotterimage in{
-    width: 35px;
+.fotterimage in {
+  width: 35px;
 }
 
-.footertext{
-    color: white;
-    align-items: center;
-    display: flex;
-    padding-bottom: 2%;
-    text-align: end;
-    padding-left: 36%;
+.footertext {
+  color: white;
+  align-items: center;
+  display: flex;
+  padding-bottom: 2%;
+  text-align: end;
+  padding-left: 36%;
 }
 
-.footerbutton{
-    background: none;
-    border: none;
-    margin-bottom: 20px;
-    margin-left: 1%;
-    cursor: pointer;
+.footerbutton {
+  background: none;
+  border: none;
+  margin-bottom: 20px;
+  margin-left: 1%;
+  cursor: pointer;
 }
-
 
 @media only screen and (max-width: 900px) {
-    .footer {
-        display: inline;
-        margin-left: 20px;
-        margin-top: 20%;
-    }
+  .footer {
+    display: inline;
+    margin-left: 20px;
+    margin-top: 20%;
+  }
 
-    .footer .footertext{
-        text-align: center;
-        padding-left: 0px;
-        font-size: 12px;
-    }
-    .footer .fotterimage .fb{
-        display: none;
-        width: 9.96px;
-        margin-bottom: 10px;
-    }
-    .footer .fotterimage insta{
-        display: block;
-        width: 9.96px;
-        margin-bottom: 10px;
-    }
+  .footer .footertext {
+    text-align: center;
+    padding-left: 0px;
+    font-size: 12px;
+  }
+  .footer .fotterimage .fb {
+    display: none;
+    width: 9.96px;
+    margin-bottom: 10px;
+  }
+  .footer .fotterimage insta {
+    display: block;
+    width: 9.96px;
+    margin-bottom: 10px;
+  }
 
-    .footer .fotterimage{
-        margin-left: 12px;
-    }
+  .footer .fotterimage {
+    margin-left: 12px;
+  }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .footer {
+    zoom: 80%;
+    margin-top: 10%;
+  }
+  .footer .footertext {
+    padding-left: 40%;
+  }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .footer {
+    zoom: normal;
+  }
+  .footer .footertext {
+    padding-left: 35%;
+  }
 }

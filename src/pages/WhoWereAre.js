@@ -8,13 +8,12 @@ function WhoWereAre() {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div  className="whoweare">
+    <div className="whoweare">
       <div className="margin">
         <h1 className="title">w h o w e a r e</h1>
         <h1 className="content">
-          Your digital buddy to create <br /> best design and robust solution
-          for <br />
-          Web, Mobile application
+          Your digital buddy to create best design and robust solution for Web,
+          Mobile application
         </h1>
         <h2 className="desc">
           We at InByte, engineer modern businesses to improve everyday life and

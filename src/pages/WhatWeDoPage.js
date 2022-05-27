@@ -109,29 +109,101 @@ function WhatWeDoPage() {
   };
 
   return (
-    <div className="whatwedo">
+    <div>
       <h1 className="whatwedoheading">What we do?</h1>
-      <div className="whatwedocard">
-        <h1 className="whatwedotitle">{active}</h1>
-        <p className="whatwedodesc">
-          {activeDesFirstPara} <br />
-          <br />
-          {activeDesSecPara}
-        </p>
-        <div>
-          <button className="reachusbutton" onClick={scrollToBottom}>
-            Reach us <img className="reachusimage" src={ArrowVector} />
-          </button>
-        </div>
-        {activeUI}
-      </div>
+      <div className="whatwedo">
+        <div className="browerview">
+          <div className="mobileuiscrollbar">
+            <BrowserView>
+              <div className="whatwedovertical">
+                <div className="whatwedofirstcard">
+                  <button className="whatwedobutton" onClick={activeUI}>
+                    <Customcardpage
+                      image={MenuVector}
+                      module={activeModule1}
+                      style={"module-border-wrap-card1"}
+                      title={"UI/UX & Graphic Design"}
+                    />
+                  </button>
+                </div>
 
-      {/* style={{ width: 1200, height: 150 }} */}
-      <div className="browerview">
-        <Scrollbars style={{ width: 1200, height: 150 }}>
-          <BrowserView>
+                <div className="whatwedomargin">
+                  <button
+                    className="whatwedobutton"
+                    onClick={activeAppDevelopment}
+                  >
+                    <Customcardpage
+                      image={MobileVector}
+                      module={activeModule2}
+                      style={"module-border-wrap-card2"}
+                      title={"Android & IOS App Development"}
+                    />
+                  </button>
+                </div>
+                <div className="whatwedomargin">
+                  <button
+                    className="whatwedobutton"
+                    onClick={activeWebDevelopment}
+                  >
+                    <Customcardpage
+                      image={ComputerVector}
+                      module={activeModule3}
+                      style={"module-border-wrap-card3"}
+                      title={"Web Application Development"}
+                    />
+                  </button>
+                </div>
+                <div className="whatwedomargin">
+                  <button
+                    className="whatwedobutton"
+                    onClick={activeDigitalMarketing}
+                  >
+                    <Customcardpage
+                      image={SpeakerVector}
+                      module={activeModule4}
+                      style={"module-border-wrap-card4"}
+                      title={"Digital Marketing for all Businesses"}
+                    />
+                  </button>
+                </div>
+                <div className="whatwedomargin">
+                  <button className="whatwedobutton" onClick={activeStartegy}>
+                    <Customcardpage
+                      image={AsstiveVector}
+                      module={activeModule5}
+                      style={"module-border-wrap-card5"}
+                      title={"Strategy & Consultancy"}
+                    />
+                  </button>
+                </div>
+              </div>
+            </BrowserView>
+          </div>
+        </div>
+
+        <div className="whatwedocard">
+          <h1 className="whatwedotitle">{active}</h1>
+          <p className="whatwedodesc">
+            {activeDesFirstPara} <br />
+            <br />
+            {activeDesSecPara}
+          </p>
+          <div>
+            <button className="reachusbutton" onClick={scrollToBottom}>
+              Reach us <img className="reachusimage" src={ArrowVector} />
+            </button>
+          </div>
+          {activeUI}
+        </div>
+
+        {/* style={{ width: 1300, height: 150, zIndex: 2001 , }} */}
+
+        {/* for mobile MobileView */}
+
+        <Scrollbars>
+          <MobileView>
             <div className="whatwedovertical">
-              <div className="whatwedofirstcard">
+              <div className="whatwedomargin">
                 <button className="whatwedobutton" onClick={activeUI}>
                   <Customcardpage
                     image={MenuVector}
@@ -192,72 +264,9 @@ function WhatWeDoPage() {
                 </button>
               </div>
             </div>
-          </BrowserView>
+          </MobileView>
         </Scrollbars>
       </div>
-
-      {/* for mobile MobileView */}
-
-      <Scrollbars>
-        <MobileView>
-          <div className="whatwedovertical">
-            <div className="whatwedomargin">
-              <button className="whatwedobutton" onClick={activeUI}>
-                <Customcardpage
-                  image={MenuVector}
-                  module={activeModule1}
-                  style={"module-border-wrap-card1"}
-                  title={"UI/UX & Graphic Design"}
-                />
-              </button>
-            </div>
-
-            <div className="whatwedomargin">
-              <button className="whatwedobutton" onClick={activeAppDevelopment}>
-                <Customcardpage
-                  image={MobileVector}
-                  module={activeModule2}
-                  style={"module-border-wrap-card2"}
-                  title={"Android & IOS App Development"}
-                />
-              </button>
-            </div>
-            <div className="whatwedomargin">
-              <button className="whatwedobutton" onClick={activeWebDevelopment}>
-                <Customcardpage
-                  image={ComputerVector}
-                  module={activeModule3}
-                  style={"module-border-wrap-card3"}
-                  title={"Web Application Development"}
-                />
-              </button>
-            </div>
-            <div className="whatwedomargin">
-              <button
-                className="whatwedobutton"
-                onClick={activeDigitalMarketing}
-              >
-                <Customcardpage
-                  image={SpeakerVector}
-                  module={activeModule4}
-                  style={"module-border-wrap-card4"}
-                  title={"Digital Marketing for all Businesses"}
-                />
-              </button>
-            </div>
-            <div className="whatwedomargin">
-              <button className="whatwedobutton" onClick={activeStartegy}>
-                <Customcardpage
-                  image={AsstiveVector}
-                  module={activeModule5}
-                  style={"module-border-wrap-card5"}
-                  title={"Strategy & Consultancy"}
-                />
-              </button>
-            </div>
-          </div>
-        </MobileView>
-      </Scrollbars>
     </div>
   );
 }

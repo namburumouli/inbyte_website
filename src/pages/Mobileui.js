@@ -9,23 +9,12 @@ function Mobileui() {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <div
-      //  data-aos="fade-up"
-      data-aos-anchor-placement="top-center"
-      className="mobileui"
-    >
-      <div>
-        <img
-          data-aos="fade-up-right"
-          className="mobileuiimage"
-          src={ApplicationDesign}
-          alt="applicationdesign"
-        />
+    <div className="mobileui">
+      <div data-aos="zoom-in-up">
+        <img src={ApplicationDesign} className="mobileuiimage" alt="uiimage" />
       </div>
-      <div data-aos="fade-up-left" className="row">
-        <div>
-          <h1 className="mobileuititle">Best In Class Mobile Applications</h1>
-        </div>
+      <div data-aos="fade-right">
+        <h1 className="mobileuititle">Best In Class Mobile Applications</h1>
         <h2 className="mobileuidesc">
           We deliver high-quality mobile applications that earns distinction of
           "Best In Class" for Android and iOS with high performance, consistent

@@ -9,30 +9,32 @@ function Sayhello() {
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState("");
   const [message, setMessage] = useState("");
-  const [response,setResponse] = useState("");
+  const [response, setResponse] = useState("");
 
   const payload = {
-    name:name,
-    email:email,
-    contact:contact,
-    message:message,
-  }
+    name: name,
+    email: email,
+    contact: contact,
+    message: message,
+  };
 
   const projectQueriesApi = () => {
     Axios({
-      method :'post',
-      url: 'http://192.168.29.7:8080/api/projectQueries/createProjectQuery',
-      data:payload,
-      headers:{
-        'Content-Type' : 'application/json',
-        'Access-Control-Allow-Origin': '*',
+      method: "post",
+      url: "http://192.168.29.7:8080/api/projectQueries/createProjectQuery",
+      data: payload,
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
       },
-    }).then((response) =>{
-      setResponse(response)
-    }).catch((error)=>{
-      setResponse(error)
     })
-    console.log(payload)
+      .then((response) => {
+        setResponse(response);
+      })
+      .catch((error) => {
+        setResponse(error);
+      });
+    console.log(payload);
   };
 
   return (
@@ -47,7 +49,9 @@ function Sayhello() {
           </div>
           <div className="flex">
             <img className="image" src={PhoneImage} alt="phoneimage" />
-            <h1 className="info">898537XXXX</h1>
+            <button className="sayhellobutton">
+              <h1 className="info">898537XXXX</h1>
+            </button>
           </div>
         </div>
         <div className="boxed">
