@@ -195,20 +195,21 @@
     margin-top: 30%;
     margin-left: 50px;
     margin-right: 10px;
-  }
-  .homepage .homepagetitle1 {
-    font-size: 26px;
-  }
-  .homepage .homepagetitle {
-    font-size: 26px;
+    font-size: 46px;
+    line-height: normal;
   }
 
-  .homepage .homepagedesc {
-    font-size: larger;
-  }
-
-  .homepage .homepagebutton {
+  .homepage .homepagedescp {
+    margin-top: 95%;
     font-size: small;
+    margin-left: 15%;
+    margin-right: 5%;
+  }
+
+  .homepage .homepageimage {
+    zoom: 35%;
+    margin-top: 120%;
+    margin-left: -10%;
   }
 }
 
@@ -216,7 +217,7 @@
   .homepage {
     zoom: 80%;
   }
-  .homepage .homepageimage{
+  .homepage .homepageimage {
     margin-left: 40%;
   }
 }
