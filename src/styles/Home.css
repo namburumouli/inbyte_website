@@ -40,8 +40,8 @@
 
   .home .homeimage {
     display: block;
-    height: 100%;
-    width: 100%;
+    width: 360px;
+    height: 630px;
   }
 
   .home .homedesc {

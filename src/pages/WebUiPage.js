@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
-import Webui from "../assets/images/trillowebui.png";
+import Webuislide1 from "../assets/images/webuiimages/1.png";
+import Webuislide2 from "../assets/images/webuiimages/2.png";
+import Webuislide3 from "../assets/images/webuiimages/3.png";
+import Webuislide4 from "../assets/images/webuiimages/4.png";
 import "../styles/Webui.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -29,7 +32,34 @@ function WebUiPage() {
         data-aos-offset="300"
         data-aos-easing="ease-in-sine"
       >
-        <img className="webuiimage" src={Webui} alt="webui" />
+        <div class="slider">
+          <div class="slide-track">
+            <div className="webuiimage">
+              <img className="webuuiimg" src={Webuislide1} alt="webui" />
+            </div>
+            <div className="webuiimage">
+              <img className="webuuiimg" src={Webuislide2} alt="webui" />
+            </div>
+            <div className="webuiimage">
+              <img className="webuuiimg" src={Webuislide3} alt="webui" />
+            </div>
+            <div className="webuiimage">
+              <img className="webuuiimg" src={Webuislide4} alt="webui" />
+            </div>
+            <div className="webuiimage">
+              <img className="webuuiimg" src={Webuislide1} alt="webui" />
+            </div>
+            <div className="webuiimage">
+              <img className="webuuiimg" src={Webuislide2} alt="webui" />
+            </div>
+            <div className="webuiimage">
+              <img className="webuuiimg" src={Webuislide3} alt="webui" />
+            </div>
+            <div className="webuiimage">
+              <img className="webuuiimg" src={Webuislide4} alt="webui" />
+            </div>
+          </div>
+        </div>
       </div>
 
       <div></div>

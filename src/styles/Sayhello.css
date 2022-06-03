@@ -62,7 +62,7 @@
   border-radius: 30px;
 }
 
-.sayhellobutton{
+.sayhellobutton {
   cursor: pointer;
   background: none;
   border: none;
@@ -104,6 +104,8 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 24px;
 }
+
+
 input[type="text"],
 textarea {
   background-color: #1b1a1a;
@@ -126,6 +128,8 @@ textarea {
   pointer-events: none;
   transition: all 0.3s ease;
 }
+
+
 .input-data .underline {
   position: absolute;
   height: 2px;
@@ -216,6 +220,9 @@ textarea {
   color: black;
 }
 
+.visibile{
+  visibility: hidden;
+}
 
 @media only screen and (max-width: 600px) {
   .sayhello {
@@ -269,20 +276,19 @@ textarea {
     width: 250px;
   }
 
-  .sayhello .outlined{
+  .sayhello .outlined {
     margin-top: 40px;
   }
 
-
-  .sayhello .image{
-    position:absolute;
+  .sayhello .image {
+    position: absolute;
     margin-left: 50px;
     width: 22.29px;
     height: 18.75px;
     margin-top: 7%;
   }
 
-  .sayhello .info{
+  .sayhello .info {
     font-size: large;
     margin-left: 90px;
     margin-top: 20px;
@@ -306,9 +312,8 @@ textarea {
     margin-left: 50px;
     display: block;
     text-align: start;
-
   }
-  .sayhello .projectinquirestext{
+  .sayhello .projectinquirestext {
     font-size: 24px;
   }
 
@@ -316,27 +321,19 @@ textarea {
     font-size: small;
     margin-left: 20px;
   }
-  .sayhello .input-data input:focus ~ label{
+  .sayhello .input-data input:focus ~ label {
     font-size: small;
   }
-} 
-
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-    .sayhello  {
-      zoom: 80%;
-    }
-
 }
 
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
-    .sayhello {
-      zoom :normal
-    }
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .sayhello {
+    zoom: 80%;
+  }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .sayhello {
+    zoom: normal;
+  }
 }

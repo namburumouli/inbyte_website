@@ -17,6 +17,7 @@ function Footer() {
   const linkedin = () => {
     window.open("https://www.linkedin.com/company/inbytesolutions");
   };
+  
   return (
     <div className="footer">
       <button className="footerbutton">

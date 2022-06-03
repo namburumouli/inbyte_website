@@ -1,0 +1,11 @@
+.alertdialog {
+    height: 100%;
+    position: absolute;
+    color: blue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45%;
+  }
+  

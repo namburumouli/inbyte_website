@@ -1,7 +1,7 @@
 .whatwedo {
   height: 100vh;
-  margin-left: 10%;
-  margin-right: 10%;
+  max-width: max-content;
+  margin: auto;
 }
 
 .whatwedocard {
@@ -18,21 +18,33 @@
 }
 
 .mobileuiscrollbar {
-  height: 150px;
+  height: 160px;
   width: 1200px;
-  overflow-y: scroll;
-  overflow-x: scroll;
+  /* overflow-y: scroll;
+  overflow-x: scroll; */
   border: 1px solid black;
-  z-index: 1001;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  transition: all 0.2s;
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
 }
 
-.mobileuiscrollbar::-webkit-scrollbar{
+.mobileuiscrollbar.active {
+  background: rgba(255, 255, 255, 0.3);
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1);
+}
+
+.mobileuiscrollbar::-webkit-scrollbar {
   display: none;
 }
 
 .mobileuiscrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .whatwedotitle {
@@ -84,6 +96,7 @@
 
 .browerview {
   overflow: hidden;
+  width: 100%;
 }
 
 .reachusbutton {
@@ -97,6 +110,7 @@
   border-color: black;
   display: block;
   margin: 5%;
+  cursor: pointer;
 }
 
 .reachusimage {
@@ -119,7 +133,13 @@
 @media only screen and (max-width: 900px) {
   .whatwedo {
     height: 100vh;
-    margin-left: 8%;
+    margin-left: 10%;
+  }
+
+  .whatwedo .whatwedovertical {
+    zoom: 80%;
+    justify-content: center;
+    align-items: center;
   }
 
   .whatwedo .whatwedocard {
@@ -143,10 +163,9 @@
     font-size: 24px;
     margin-top: 53px;
     margin-left: 120px;
-
   }
 
-   .whatwedoheading {
+  .whatwedoheading {
     font-size: xx-large;
     margin-left: 55px;
   }
@@ -167,6 +186,7 @@
   }
 
   .whatwedo .reachusbutton {
+    position:absolute;
     background-color: white;
     margin-left: 100px;
     height: 49px;
@@ -201,7 +221,7 @@
 }
 
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-  .whatwedo  {
+  .whatwedo {
     zoom: 75%;
   }
 }

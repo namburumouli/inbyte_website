@@ -1,5 +1,26 @@
 .homepage {
   height: 100vh;
+  text-align: center;
+}
+
+.homepageimageanimate {
+  animation: animate 0.2s ease infinite;
+}
+.homepagestaranimation {
+  animation: animate 0.1s ease infinite;
+}
+
+.homepagemargin{
+  margin-top: 2%;
+}
+@keyframes animateStarts {
+  0%,
+  100% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
 }
 
 .homepageimage {
@@ -12,6 +33,19 @@
   zoom: 75%;
   margin-left: 35%;
   margin-top: 4%;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+}
+.homepagetextalign {
+  position: relative;
 }
 
 .homepagetext {
@@ -37,9 +71,10 @@
   color: white;
   font-size: 24px;
   font-weight: 400;
-  margin-top: 40%;
-  margin-left: 10%;
+  margin-left: 139.5px;
   margin-right: 40%;
+  margin-top: 650px;
+  text-align: start;
 }
 /* need to remove below code */
 
@@ -189,6 +224,14 @@
   .homepage .homeVideo-wrapper {
     height: 100%;
     display: inline;
+  }
+
+  .homepage .homepagestars {
+    display: none;
+  }
+
+  .homepage .homepagestars2 {
+    display: none;
   }
 
   .homepage .homepagetext {

@@ -1,6 +1,7 @@
 .discussproject {
   height: 250px;
   background-color: #0f34b6;
+  text-align: center;
 }
 
 .discussprojecttitle {
@@ -8,7 +9,8 @@
   text-align: center;
   font-family: "Podkova", serif;
   font-size: 48px;
-  margin-top: 6%;
+  margin-top: 4%;
+  margin-bottom: auto;
   font-weight: bolder;
   line-height: 0%;
 }

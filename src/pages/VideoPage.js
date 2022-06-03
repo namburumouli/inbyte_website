@@ -9,7 +9,7 @@ function Videopage() {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <div className='video-wrapper'>
+    <div className='videowrapper'>
         <video 
         autoPlay
         loop

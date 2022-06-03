@@ -16,8 +16,11 @@
     "react-custom-scrollbars-2": "^4.4.0",
     "react-device-detect": "^2.2.2",
     "react-dom": "^18.0.0",
+    "react-dragscroll": "^2.0.1",
     "react-router-dom": "^6.3.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
+    "react-use-draggable-scroll": "^0.4.2",
     "swiper": "^8.1.4",
     "web-vitals": "^2.1.4"
   },

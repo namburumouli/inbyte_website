@@ -8,7 +8,7 @@ function WhoWereAre() {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="whoweare">
+    <div className="whoweare" id="about">
       <div className="margin">
         <h1 className="title">w h o w e a r e</h1>
         <h1 className="content">

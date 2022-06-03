@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import { useDraggable } from "react-use-draggable-scroll";
 import { BrowserView, MobileView } from "react-device-detect";
 import "../styles/WhatWeDoPage.css";
 import Customcardpage from "../Components/card";
@@ -9,8 +10,13 @@ import ComputerVector from "../assets/images/whatwedo/computervector.png";
 import MobileVector from "../assets/images/whatwedo/mobilevector.png";
 import SpeakerVector from "../assets/images/whatwedo/speakervector.png";
 import ArrowVector from "../assets/images/whatwedo/rightarrowvector.png";
+import ReactDragscroll from "react-dragscroll";
+import { HashLink as Link } from "react-router-hash-link";
 
 function WhatWeDoPage() {
+  const ref = useRef(); // We will use React useRef hook to reference the wrapping div:
+  const { events } = useDraggable(ref);
+
   const [active, setActive] = useState("UI/UX & Graphic Design");
   const [activeDesFirstPara, setActiveDesFirstPara] = useState(
     "First stage of product development is prototyping so it is such a crucial step for the business to do research in the society to make a good digital product which should look aesthetic and user friendly."
@@ -108,12 +114,49 @@ function WhatWeDoPage() {
     });
   };
 
+  const dragToScroll = () => {
+    const slider = document.querySelector(".mobileuiscrollbar");
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener("mousedown", (e) => {
+      isDown = true;
+      slider.classList.add("active");
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener("mouseleave", () => {
+      isDown = false;
+      slider.classList.remove("active");
+    });
+    slider.addEventListener("mouseup", () => {
+      isDown = false;
+      slider.classList.remove("active");
+    });
+    slider.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - startX) * 3; //scroll-fast
+      slider.scrollLeft = scrollLeft - walk;
+      console.log(walk);
+    });
+  };
+
+  //   <div>
+  //   <button className="reachusbutton" onClick={scrollToBottom}>
+  //     Reach us{" "}
+  //     <img className="reachusimage" src={ArrowVector} />
+  //   </button>
+  // </div>
   return (
-    <div>
+    <div id="services">
       <h1 className="whatwedoheading">What we do?</h1>
       <div className="whatwedo">
         <div className="browerview">
-          <div className="mobileuiscrollbar">
+          <div className="mobileuiscrollbar" {...events} ref={ref}>
+            {dragToScroll}
             <BrowserView>
               <div className="whatwedovertical">
                 <div className="whatwedofirstcard">
@@ -181,19 +224,21 @@ function WhatWeDoPage() {
           </div>
         </div>
 
-        <div className="whatwedocard">
-          <h1 className="whatwedotitle">{active}</h1>
-          <p className="whatwedodesc">
-            {activeDesFirstPara} <br />
-            <br />
-            {activeDesSecPara}
-          </p>
-          <div>
-            <button className="reachusbutton" onClick={scrollToBottom}>
-              Reach us <img className="reachusimage" src={ArrowVector} />
-            </button>
+        <div >
+          <div className="whatwedocard" >
+            <h1 className="whatwedotitle">{active}</h1>
+            <p className="whatwedodesc">
+              {activeDesFirstPara} <br />
+              <br />
+              {activeDesSecPara}
+            </p>
+            <div >
+              <button className="reachusbutton" onClick={scrollToBottom}>
+                Reach us <img className="reachusimage" src={ArrowVector} />
+              </button>
+            </div>
+            {activeUI}
           </div>
-          {activeUI}
         </div>
 
         {/* style={{ width: 1300, height: 150, zIndex: 2001 , }} */}
