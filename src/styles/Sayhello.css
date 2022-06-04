@@ -224,6 +224,7 @@ textarea {
   visibility: hidden;
 }
 
+
 @media only screen and (max-width: 600px) {
   .sayhello {
     height: 100%;
