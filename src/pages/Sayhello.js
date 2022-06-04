@@ -5,7 +5,21 @@ import PhoneImage from "../assets/images/phone.svg";
 import Axios from "axios";
 import Loader from "../Components/loader";
 import Alertdialog from "../Components/Alertdialog";
-import { wait } from "@testing-library/user-event/dist/utils";
+
+//material design 
+import Dialog from "@material-ui/core/Dialog";
+import DialogContentText from "@material-ui/core/DialogContentText";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import DialogActions from "@material-ui/core/DialogActions";
+import DialogContent from "@material-ui/core/DialogContent";
+import Button from "@material-ui/core/Button";
+
+//spinner from bootstrap
+import * as ReactBootStrap from 'react-bootstrap' 
+
+
+
+
 
 function Sayhello() {
   const [name, setName] = useState("");
@@ -17,9 +31,11 @@ function Sayhello() {
   const [labelvisibility2, setLableVisibility2] = useState("");
   const [labelvisibility3, setLableVisibility3] = useState("");
   const [labelvisibility4, setLableVisibility4] = useState("");
-  const [loaderVisibility, setLoaderVisibility] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [alertdisplay, setAlertDisplay] = useState(false);
   const [error, setError] = useState("");
+  const [errorTitle,setErrorTitle] = useState("")
+  const [open, setOpen] = useState(false);
 
   const payload = {
     name: name,
@@ -28,11 +44,9 @@ function Sayhello() {
     message: message,
   };
 
-  const projectQueriesApi =  async() => {
+  const projectQueriesApi =  async () => {
 
-    await setTimeout(1000)
-    setLoaderVisibility(true);
-    Axios({
+    const data = await Axios({
       method: "post",
       url: "https://f865-2405-201-c01c-106e-b108-dba4-9233-3a10.in.ngrok.io/api/projectQueries/createProjectQuery",
       data: payload,
@@ -43,18 +57,23 @@ function Sayhello() {
     })
       .then((response) => {
         setResponse(response);
-        setLoaderVisibility(false);
         setAlertDisplay(true);
         setError(response)
+        
+        setOpen(true)
+        
       })
       .catch((error) => {
         setResponse(error);
-        setError(error.message);
+        setError("oops! Something Went Wrong");
         setAlertDisplay(true);
-        setLoaderVisibility(false);
+        setErrorTitle("Error")
+        setOpen(true)
       });
     console.log(payload);
   };
+
+
 
   const Label1 = (e) => {
     setName(e.target.value);
@@ -92,10 +111,28 @@ function Sayhello() {
     }
   };
 
+  const handleToClose = () => {
+    setOpen(false)
+  };
+
   return (
     <div className="sayhello" id="contactus">
-      <Loader value={loaderVisibility} />
-      <Alertdialog alertdisplay={alertdisplay} error={error} />
+
+      <Dialog open={open} onClose={handleToClose}>
+        <DialogTitle>{errorTitle}</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            {error}
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleToClose} color="primary" autoFocus>
+            Close
+          </Button>
+        </DialogActions>
+      </Dialog>
+
+
       <div className="flex">
         <div>
           <h1 className="outlined">HELLO !</h1>
