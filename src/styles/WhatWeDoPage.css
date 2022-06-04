@@ -1,5 +1,5 @@
 .whatwedo {
-  height: 100vh;
+  height: 100%;
   max-width: max-content;
   margin: auto;
 }
@@ -15,6 +15,10 @@
   width: 994px;
   margin-left: 8%;
   text-align: center;
+}
+
+.mobileview {
+  display: none;
 }
 
 .mobileuiscrollbar {
@@ -75,7 +79,8 @@
   font-size: 64px;
   line-height: 96px;
   color: #ffffff;
-  margin-left: 111px;
+  margin-left: 15px;
+  text-align: start;
 }
 
 .whatwedomargin {
@@ -133,23 +138,14 @@
 @media only screen and (max-width: 900px) {
   .whatwedo {
     height: 100vh;
-    margin-left: 10%;
+    /* margin-left: 10%; */
+    text-align: start;
   }
 
   .whatwedo .whatwedovertical {
     zoom: 80%;
     justify-content: center;
     align-items: center;
-  }
-
-  .whatwedo .whatwedocard {
-    position: absolute;
-    background: #131313;
-    border-radius: 10px;
-    margin-top: 20px;
-    height: 579px;
-    width: 894px;
-    margin-left: 75px;
   }
 
   .whatwedo .whatwedotitle {
@@ -167,7 +163,7 @@
 
   .whatwedoheading {
     font-size: xx-large;
-    margin-left: 55px;
+    margin-left: 50px;
   }
 
   .whatwedo .whatwedomargin {
@@ -186,7 +182,7 @@
   }
 
   .whatwedo .reachusbutton {
-    position:absolute;
+    position: absolute;
     background-color: white;
     margin-left: 100px;
     height: 49px;

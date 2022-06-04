@@ -144,16 +144,10 @@ function WhatWeDoPage() {
     });
   };
 
-  //   <div>
-  //   <button className="reachusbutton" onClick={scrollToBottom}>
-  //     Reach us{" "}
-  //     <img className="reachusimage" src={ArrowVector} />
-  //   </button>
-  // </div>
   return (
     <div id="services">
-      <h1 className="whatwedoheading">What we do?</h1>
       <div className="whatwedo">
+        <h1 className="whatwedoheading">What we do?</h1>
         <div className="browerview">
           <div className="mobileuiscrollbar" {...events} ref={ref}>
             {dragToScroll}
@@ -224,15 +218,16 @@ function WhatWeDoPage() {
           </div>
         </div>
 
-        <div >
-          <div className="whatwedocard" >
+        <div>
+          <div className="whatwedocard">
             <h1 className="whatwedotitle">{active}</h1>
             <p className="whatwedodesc">
               {activeDesFirstPara} <br />
               <br />
               {activeDesSecPara}
             </p>
-            <div >
+            <div />
+            <div>
               <button className="reachusbutton" onClick={scrollToBottom}>
                 Reach us <img className="reachusimage" src={ArrowVector} />
               </button>
@@ -240,8 +235,6 @@ function WhatWeDoPage() {
             {activeUI}
           </div>
         </div>
-
-        {/* style={{ width: 1300, height: 150, zIndex: 2001 , }} */}
 
         {/* for mobile MobileView */}
 

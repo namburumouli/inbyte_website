@@ -38,7 +38,9 @@ function Footer() {
       <text className="footertext">
         Copyright © 2022 by InByte. Privacy & Policy | Terms & Conditions
       </text>
+      {/* <div className="fotter">
       <img className="fotterimage" src={topArrowVector} alt="logo" />
+      </div> */}
     </div>
   );
 }
