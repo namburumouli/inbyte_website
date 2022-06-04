@@ -6,7 +6,7 @@ import Axios from "axios";
 import Loader from "../Components/loader";
 import Alertdialog from "../Components/Alertdialog";
 
-//material design 
+//material design
 import Dialog from "@material-ui/core/Dialog";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
@@ -15,11 +15,7 @@ import DialogContent from "@material-ui/core/DialogContent";
 import Button from "@material-ui/core/Button";
 
 //spinner from bootstrap
-import * as ReactBootStrap from 'react-bootstrap' 
-
-
-
-
+import * as ReactBootStrap from "react-bootstrap";
 
 function Sayhello() {
   const [name, setName] = useState("");
@@ -34,7 +30,7 @@ function Sayhello() {
   const [loading, setLoading] = useState(false);
   const [alertdisplay, setAlertDisplay] = useState(false);
   const [error, setError] = useState("");
-  const [errorTitle,setErrorTitle] = useState("")
+  const [errorTitle, setErrorTitle] = useState("");
   const [open, setOpen] = useState(false);
 
   const payload = {
@@ -44,8 +40,7 @@ function Sayhello() {
     message: message,
   };
 
-  const projectQueriesApi =  async () => {
-
+  const projectQueriesApi = async () => {
     const data = await Axios({
       method: "post",
       url: "https://f865-2405-201-c01c-106e-b108-dba4-9233-3a10.in.ngrok.io/api/projectQueries/createProjectQuery",
@@ -58,22 +53,19 @@ function Sayhello() {
       .then((response) => {
         setResponse(response);
         setAlertDisplay(true);
-        setError(response)
-        
-        setOpen(true)
-        
+        setError(response);
+        setOpen(true);
+        setLoading(true)
       })
       .catch((error) => {
         setResponse(error);
         setError("oops! Something Went Wrong");
         setAlertDisplay(true);
-        setErrorTitle("Error")
-        setOpen(true)
+        setErrorTitle("Error");
+        setOpen(true);
       });
     console.log(payload);
   };
-
-
 
   const Label1 = (e) => {
     setName(e.target.value);
@@ -112,18 +104,18 @@ function Sayhello() {
   };
 
   const handleToClose = () => {
-    setOpen(false)
+    setOpen(false);
   };
 
   return (
     <div className="sayhello" id="contactus">
+      {loading? ()=>{}:<ReactBootStrap.Spinner animation="border" variant="danger" />}
+    
 
       <Dialog open={open} onClose={handleToClose}>
         <DialogTitle>{errorTitle}</DialogTitle>
         <DialogContent>
-          <DialogContentText>
-            {error}
-          </DialogContentText>
+          <DialogContentText>{error}</DialogContentText>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleToClose} color="primary" autoFocus>
@@ -131,7 +123,6 @@ function Sayhello() {
           </Button>
         </DialogActions>
       </Dialog>
-
 
       <div className="flex">
         <div>
