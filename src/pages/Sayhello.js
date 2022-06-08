@@ -5,17 +5,11 @@ import PhoneImage from "../assets/images/phone.svg";
 import Axios from "axios";
 import Loader from "../Components/loader";
 import Alertdialog from "../Components/Alertdialog";
+import validator from 'validator'
 
-//material design
-import Dialog from "@material-ui/core/Dialog";
-import DialogContentText from "@material-ui/core/DialogContentText";
-import DialogTitle from "@material-ui/core/DialogTitle";
-import DialogActions from "@material-ui/core/DialogActions";
-import DialogContent from "@material-ui/core/DialogContent";
-import Button from "@material-ui/core/Button";
 
-//spinner from bootstrap
-import * as ReactBootStrap from "react-bootstrap";
+
+
 
 function Sayhello() {
   const [name, setName] = useState("");
@@ -41,29 +35,24 @@ function Sayhello() {
   };
 
   const projectQueriesApi = async () => {
-    console.log(name)
-    if (name.length < 2 ) {
+    console.log(name);
+    if (name.length < 2) {
       setErrorTitle("Error");
       setOpen(true);
       alert("Name should not be empty");
-
-    }
-    else if (email.length < 2 ) {
+    } else if (email.length < 2 ||  !validator.isEmail(email)) {
       setErrorTitle("Error");
       setOpen(true);
-      alert("Email should not be empty");
-    }
-    else if (contact.length > 10 || isNaN(contact) || contact.length <10 ) {
+      alert("Enter Valid Email Id");
+    } else if (contact.length > 10 || isNaN(contact) || contact.length < 10) {
       setErrorTitle("Error");
       setOpen(true);
       alert("Please Enter valid contact number ");
-    }
-    else if (message.length < 2 ) {
+    } else if (message.length < 2) {
       setErrorTitle("Error");
       setOpen(true);
       alert("Message should not be empty");
-    }
-     else {
+    } else {
       const data = await Axios({
         method: "post",
         url: "https://f865-2405-201-c01c-106e-b108-dba4-9233-3a10.in.ngrok.io/api/projectQueries/createProjectQuery",
@@ -133,11 +122,11 @@ function Sayhello() {
 
   return (
     <div className="sayhello" id="contactus">
-      {loading ? (
+      {/* {loading ? (
         () => {}
       ) : (
         <ReactBootStrap.Spinner animation="border" variant="danger" />
-      )}
+      )} */}
 
       {/* <Dialog open={open} onClose={handleToClose}>
         <DialogTitle>{errorTitle}</DialogTitle>
@@ -203,7 +192,7 @@ function Sayhello() {
               <input
                 type="text"
                 required
-                numberOfLines={10} 
+                numberOfLines={10}
                 onClick={Label4}
                 onInput={(e) => Label4(e)}
               />
