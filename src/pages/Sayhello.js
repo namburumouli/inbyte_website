@@ -20,7 +20,7 @@ import * as ReactBootStrap from "react-bootstrap";
 function Sayhello() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [contact, setContact] = useState("");
+  const [contact, setContact] = useState();
   const [message, setMessage] = useState("");
   const [response, setResponse] = useState("");
   const [labelvisibility1, setLableVisibility1] = useState("");
@@ -41,30 +41,54 @@ function Sayhello() {
   };
 
   const projectQueriesApi = async () => {
-    const data = await Axios({
-      method: "post",
-      url: "https://f865-2405-201-c01c-106e-b108-dba4-9233-3a10.in.ngrok.io/api/projectQueries/createProjectQuery",
-      data: payload,
-      headers: {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-      },
-    })
-      .then((response) => {
-        setResponse(response);
-        setAlertDisplay(true);
-        setError(response);
-        setOpen(true);
-        setLoading(true)
+    console.log(name)
+    if (name.length < 2 ) {
+      setErrorTitle("Error");
+      setOpen(true);
+      alert("Name should not be empty");
+
+    }
+    else if (email.length < 2 ) {
+      setErrorTitle("Error");
+      setOpen(true);
+      alert("Email should not be empty");
+    }
+    else if (contact.length > 10 || isNaN(contact) || contact.length <10 ) {
+      setErrorTitle("Error");
+      setOpen(true);
+      alert("Please Enter valid contact number ");
+    }
+    else if (message.length < 2 ) {
+      setErrorTitle("Error");
+      setOpen(true);
+      alert("Message should not be empty");
+    }
+     else {
+      const data = await Axios({
+        method: "post",
+        url: "https://f865-2405-201-c01c-106e-b108-dba4-9233-3a10.in.ngrok.io/api/projectQueries/createProjectQuery",
+        data: payload,
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
       })
-      .catch((error) => {
-        setResponse(error);
-        setError("oops! Something Went Wrong");
-        setAlertDisplay(true);
-        setErrorTitle("Error");
-        setOpen(true);
-      });
-    console.log(payload);
+        .then((response) => {
+          setResponse(response);
+          setAlertDisplay(true);
+          alert(response);
+          setOpen(true);
+          setLoading(true);
+        })
+        .catch((error) => {
+          setResponse(error);
+          alert("oops! Something Went Wrong");
+          setAlertDisplay(true);
+          setErrorTitle("Error");
+          setOpen(true);
+        });
+      console.log(payload);
+    }
   };
 
   const Label1 = (e) => {
@@ -109,10 +133,13 @@ function Sayhello() {
 
   return (
     <div className="sayhello" id="contactus">
-      {loading? ()=>{}:<ReactBootStrap.Spinner animation="border" variant="danger" />}
-    
+      {loading ? (
+        () => {}
+      ) : (
+        <ReactBootStrap.Spinner animation="border" variant="danger" />
+      )}
 
-      <Dialog open={open} onClose={handleToClose}>
+      {/* <Dialog open={open} onClose={handleToClose}>
         <DialogTitle>{errorTitle}</DialogTitle>
         <DialogContent>
           <DialogContentText>{error}</DialogContentText>
@@ -122,7 +149,7 @@ function Sayhello() {
             Close
           </Button>
         </DialogActions>
-      </Dialog>
+      </Dialog> */}
 
       <div className="flex">
         <div>
@@ -176,6 +203,7 @@ function Sayhello() {
               <input
                 type="text"
                 required
+                numberOfLines={10} 
                 onClick={Label4}
                 onInput={(e) => Label4(e)}
               />

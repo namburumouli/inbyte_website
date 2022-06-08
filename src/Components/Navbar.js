@@ -39,7 +39,6 @@ function Navbar() {
   }, []);
 
   return (
-    // `${show && `navbar`}`
     <div className={`navbar ${show && `nav_display`}`}>
       <div className="leftSide img">
         <img src={Logo} alt="logo" />
@@ -48,9 +47,9 @@ function Navbar() {
         <Link to="#home">Home</Link>
         <Link to="#about">About</Link>
         <Link to="#services">Services</Link>
-        <Link to="#solution">Solution</Link>
+        <Link to="#solution">Solutions</Link>
         <div  className="navbarbutton">
-        <Link to="#contactus">Contact Us</Link>
+        <Link to="#contactus">Contact Us  </Link>
         </div>
       
         {/* <button onClick={navigateTOWhatWeDoPage}>

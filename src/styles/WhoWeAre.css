@@ -42,13 +42,12 @@
     margin-right: 50px;
   }
 
-  .whoweare .title{
-      font-size: x-large;
+  .whoweare .title {
+    font-size: x-large;
   }
 
   .whoweare .desc {
     font-size: 15px;
-
   }
 
   .whoweare .content {
@@ -66,9 +65,9 @@
     margin-right: 50px;
   }
 
-  .whoweare .title{
-      font-size: large;
-      margin-top: 3%;
+  .whoweare .title {
+    font-size: large;
+    margin-top: 3%;
   }
 
   .whoweare .desc {
@@ -80,25 +79,30 @@
   }
 }
 
+@media only screen and (min-width: 600px) and  (max-device-width: 900px) {
+  .whoweare {
+    height: 100%;
+  }
 
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-    .whoweare {
-      zoom :80%;
-      margin-top: 5%;
-    }
+  .whoweare .title{
+    margin-top: -80%;
+  }
 
+  .whoweare .margin{
+    margin-right: 6%;
+    margin-left: 6%;
+  }
 }
 
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
-    .whoweare {
-      zoom :normal
-    }
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .whoweare {
+    zoom: 80%;
+    margin-top: 5%;
+  }
+}
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .whoweare {
+    zoom: normal;
+  }
 }

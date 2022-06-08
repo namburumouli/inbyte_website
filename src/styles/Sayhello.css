@@ -105,7 +105,6 @@
   font-size: 24px;
 }
 
-
 input[type="text"],
 textarea {
   background-color: #1b1a1a;
@@ -129,12 +128,12 @@ textarea {
   transition: all 0.3s ease;
 }
 
-
 .input-data .underline {
   position: absolute;
   height: 2px;
   width: 100%;
   bottom: 0;
+  visibility: hidden;
 }
 .input-data .underline:before {
   position: absolute;
@@ -146,7 +145,7 @@ textarea {
   transform-origin: center;
   transition: transform 0.3s ease;
 }
-*/.input-data input:focus ~ .underline:before,
+*.input-data input:focus ~ .underline:before,
 .input-data input:valid ~ .underline:before {
   transform: scaleX(1);
 }
@@ -220,9 +219,10 @@ textarea {
   color: black;
 }
 
-.visibile{
+.visibile {
   visibility: hidden;
 }
+
 
 
 @media only screen and (max-width: 600px) {
@@ -336,5 +336,11 @@ textarea {
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   .sayhello {
     zoom: normal;
+  }
+}
+
+@media only screen and (min-width: 600px) and  (max-device-width: 900px) {
+  .sayhello{
+    zoom: 60%;
   }
 }

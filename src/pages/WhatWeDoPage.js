@@ -10,8 +10,6 @@ import ComputerVector from "../assets/images/whatwedo/computervector.png";
 import MobileVector from "../assets/images/whatwedo/mobilevector.png";
 import SpeakerVector from "../assets/images/whatwedo/speakervector.png";
 import ArrowVector from "../assets/images/whatwedo/rightarrowvector.png";
-import ReactDragscroll from "react-dragscroll";
-import { HashLink as Link } from "react-router-hash-link";
 
 function WhatWeDoPage() {
   const ref = useRef(); // We will use React useRef hook to reference the wrapping div:

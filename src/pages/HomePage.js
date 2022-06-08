@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
-import homePageImage from "../assets/images/homepage.png";
+import homePageImageMobile from "../assets/images/homepage.png";
+import homePageImage from "../assets/images/Homepageimage.png";
+import { BrowserView, MobileView } from "react-device-detect";
 import starsImage from "../assets/images/starts.png";
 import "../styles/HomePage.css";
 import Aos from "aos";
@@ -31,6 +33,7 @@ function HomePage() {
   };
   return (
     <div className="homepage" id="home">
+      <MobileView>
       <div>
       </div>
       <div>
@@ -49,7 +52,7 @@ function HomePage() {
             <div data-aos="zoom-in-up">
               <div>
                 <img
-                  src={homePageImage}
+                  src={homePageImageMobile}
                   className="homepageimage"
                   alt="uiimage"
                 />
@@ -58,6 +61,15 @@ function HomePage() {
           </div>
         </div>
       </div>
+      </MobileView>
+
+   <BrowserView>
+      <img
+      className="homepagewebimage"
+      src={homePageImage}
+      alt="image"/>
+      </BrowserView>
+    
     </div>
   );
 }

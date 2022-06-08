@@ -22,11 +22,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Link to="#home"> </Link>
-        <Link to="#about"> </Link>
-        <Link to="#services"> </Link>
-        <Link to="#solution">inbyte</Link>
-
+      
         <Navbar/>
         <HomePage />
         <WhoWereAre />

@@ -10,7 +10,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="home" >
+    <div className="home" id="solution" >
       <div data-aos="fade-right" className="row">
         <h1 className="hometitle">Stunning UI/UX design</h1>
         <h2 className="homedesc">

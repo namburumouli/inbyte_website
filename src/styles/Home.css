@@ -84,6 +84,12 @@
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
+    .home .homedesc{
+      zoom: 80%;
+    }
+    .home .hometitle{
+      zoom: 80%;
+    }
     .home .homeimage {
       zoom: 80%;
     }
@@ -98,4 +104,10 @@
     .home {
       zoom :normal
     }
+}
+
+@media only screen and (min-width: 600px) and  (max-device-width: 900px) {
+  .home{
+    zoom: 60%;
+  }
 }
