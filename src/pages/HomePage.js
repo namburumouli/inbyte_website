@@ -32,44 +32,45 @@ function HomePage() {
     }
   };
   return (
-    <div className="homepage" id="home">
-      <MobileView>
-      <div>
-      </div>
-      <div>
-        <div data-aos="fade-right" className="row">
-          <div className="homepagemargin">
-            <h1 className="homepagetext">
-              Transforms
-              <br />
-              <span className="homepagespan">Ideas</span> Into Digital Products.
-            </h1>
-            <h1 className="homepagedescp">
-              We create realistic and futuristic products which offers best
-              digital solutions to make an impact on next-generation.
-            </h1>
+    <div>
+      <Navbar />
+      <div className="homepage" id="home">
+        <MobileView>
+          <div></div>
+          <div>
+            {/* data-aos="fade-right" */}
+            <div className="row">
+              <div className="homepagemargin">
+                <h1 className="homepagetext">
+                  Transforms
+                  <br />
+                  <span className="homepagespan">Ideas</span> Into Digital
+                  Products.
+                </h1>
+                <h1 className="homepagedescp">
+                  We create realistic and futuristic products which offers best
+                  digital solutions to make an impact on next-generation.
+                </h1>
+                {/* data-aos="zoom-in-up" */}
 
-            <div data-aos="zoom-in-up">
-              <div>
-                <img
-                  src={homePageImageMobile}
-                  className="homepageimage"
-                  alt="uiimage"
-                />
+                <div>
+                  <div>
+                    <img
+                      src={homePageImageMobile}
+                      className="homepageimage"
+                      alt="uiimage"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      </MobileView>
+        </MobileView>
 
-   <BrowserView>
-      <img
-      className="homepagewebimage"
-      src={homePageImage}
-      alt="image"/>
-      </BrowserView>
-    
+        <BrowserView>
+          <img className="homepagewebimage" src={homePageImage} alt="image" />
+        </BrowserView>
+      </div>
     </div>
   );
 }

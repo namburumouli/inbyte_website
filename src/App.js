@@ -9,6 +9,7 @@ import Videopage from "./pages/VideoPage";
 import HomePage from "./pages/HomePage";
 import Footer from "./pages/Footer";
 import WhatWeDoPage from "./pages/WhatWeDoPage";
+import LandingScreen from "./pages/splashScreen";
 import {
   BrowserRouter,
   BrowserRouter as Router,
@@ -22,8 +23,9 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-      
-        <Navbar/>
+
+        <LandingScreen />
+       
         <HomePage />
         <WhoWereAre />
         <WhatWeDoPage />
