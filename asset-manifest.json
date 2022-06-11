@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/inbyte_website/static/css/main.d7112a1e.css",
-    "main.js": "/inbyte_website/static/js/main.9247bcc2.js",
+    "main.css": "/inbyte_website/static/css/main.f0607a4f.css",
+    "main.js": "/inbyte_website/static/js/main.4fed722b.js",
     "static/media/2.png": "/inbyte_website/static/media/2.0ea63b879a7a4015a16c.png",
     "static/media/RENDER.mp4": "/inbyte_website/static/media/RENDER.1d3625182e4e71a6e362.mp4",
     "static/media/3.png": "/inbyte_website/static/media/3.a01597d0ea021a34c66e.png",
@@ -18,11 +18,11 @@
     "index.html": "/inbyte_website/index.html",
     "static/media/phone.svg": "/inbyte_website/static/media/phone.d4cce8b252e6bcbea56ebfac4e27f4d8.svg",
     "static/media/sidemenu.svg": "/inbyte_website/static/media/sidemenu.f8c0f9017bb05fc808e8ab52358a705c.svg",
-    "main.d7112a1e.css.map": "/inbyte_website/static/css/main.d7112a1e.css.map",
-    "main.9247bcc2.js.map": "/inbyte_website/static/js/main.9247bcc2.js.map"
+    "main.f0607a4f.css.map": "/inbyte_website/static/css/main.f0607a4f.css.map",
+    "main.4fed722b.js.map": "/inbyte_website/static/js/main.4fed722b.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7112a1e.css",
-    "static/js/main.9247bcc2.js"
+    "static/css/main.f0607a4f.css",
+    "static/js/main.4fed722b.js"
   ]
 }
