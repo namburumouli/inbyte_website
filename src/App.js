@@ -24,12 +24,10 @@ import { act } from "react-dom/test-utils";
 function App() {
   const [active, setActive] = useState("visibility");
 
-
-
   return (
     <BrowserRouter>
       <div className={"App"}>
-  <LandingScreen/>
+        <LandingScreen />
         <HomePage />
         <WhoWereAre />
         <WhatWeDoPage />
@@ -42,7 +40,6 @@ function App() {
         <Footer />
 
         {/* <Router>
-          <Navbar />
           <Routes>
             <Route exact path="/home" element={<HomePage />}></Route>
             <Route exact path="/about" element={<WhoWereAre />}></Route>

@@ -7,6 +7,7 @@ import youtubeVector from "../assets/images/fotter/youtube.png";
 import topArrowVector from "../assets/images/fotter/toparrow.png";
 
 import "../styles/Fotter.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   //click events
@@ -35,12 +36,15 @@ function Footer() {
       <button className="footerbutton">
         <img className="fotterimage youtube" src={youtubeVector} alt="logo" />
       </button>
-      <text className="footertext">
+      {/* <text className="footertext">
         Copyright © 2022 by InByte. Privacy & Policy | Terms & Conditions
-      </text>
+      </text> */}
       {/* <div className="fotter">
       <img className="fotterimage" src={topArrowVector} alt="logo" />
       </div> */}
+       <div className="footertext">
+       <Link to="/services">sample</Link>
+      </div>
     </div>
   );
 }
