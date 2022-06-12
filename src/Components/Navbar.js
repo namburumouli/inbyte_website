@@ -6,9 +6,12 @@ import SideMenu from "../assets/images/sidemenu.svg";
 import "../styles/Navbar.css";
 import WhatWeDoPage from "../pages/WhatWeDoPage";
 import { HashLink as Link } from "react-router-hash-link";
+import SplashScreen from "../pages/splashScreen";
+
 
 function Navbar() {
   const [show, setShow] = useState(true);
+  const [active,setactive] = useState("")
 
   const navigate = useNavigate();
 
@@ -38,7 +41,13 @@ function Navbar() {
     };
   }, []);
 
+
+  const visible = ()=>{
+    setactive("visibility")
+  }
+
   return (
+    
     <div className={`navbar ${show && `nav_display`}`}>
       <div className="leftSide img">
         <img src={Logo} alt="logo" />
@@ -58,6 +67,7 @@ function Navbar() {
       
       </div>
     </div>
+   
   );
 }
 

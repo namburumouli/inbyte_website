@@ -44,8 +44,9 @@
 
 }
 .visibility{
-    /* display: none; */
-    height: -120vh;
+    display: none;
+    /* height: -100vh; */
+    height: 0vh;
     scroll-behavior: smooth;
    
 }

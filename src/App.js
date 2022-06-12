@@ -18,14 +18,18 @@ import {
 } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import { HashLink as Link } from "react-router-hash-link";
+import { useEffect, useState } from "react";
+import { act } from "react-dom/test-utils";
 
 function App() {
+  const [active, setActive] = useState("visibility");
+
+
+
   return (
     <BrowserRouter>
-      <div className="App">
-
-        <LandingScreen />
-       
+      <div className={"App"}>
+  <LandingScreen/>
         <HomePage />
         <WhoWereAre />
         <WhatWeDoPage />

@@ -112,6 +112,10 @@
   padding-left: 5%;
   padding-right: 5%;
   }
+
+  .visibility{
+    display: none;
+  }
   
   @media only screen and (max-width: 900px) {
     .navbar .rightSide a {
