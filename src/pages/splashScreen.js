@@ -68,7 +68,7 @@ function SplashScreen() {
     <div class={active}>
       <h1 class="logo-header">
         <span class="logo">In</span>
-        <span class="logo">Byte</span>
+        <span class="logo">Byte&nbsp;</span>
         <span class="logo">Technologies</span>
       </h1>
      

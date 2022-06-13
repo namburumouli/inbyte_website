@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 
 function WebUiPage() {
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({ duration: 2000 });
   }, []);
 
   return (

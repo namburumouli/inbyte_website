@@ -6,12 +6,12 @@ import "aos/dist/aos.css";
 
 function Home() {
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({ duration: 2000 });
   }, []);
 
   return (
-    <div className="home" id="solution" >
-      <div data-aos="fade-right" className="row">
+    <div data-aos="fade-right" className="home" id="solution" >
+      <div  className="row">
         <h1 className="hometitle">Stunning UI/UX design</h1>
         <h2 className="homedesc">
           we design best visual presentation of content which emerges
@@ -19,8 +19,7 @@ function Home() {
           connectors and engaging elements.
         </h2>
       </div>
-
-      <div data-aos="zoom-in-up">
+      <div data-aos="zoom-in-up" >
         <img src={Uiiimage} className="homeimage" alt="uiimage" />
       </div>
     </div>
