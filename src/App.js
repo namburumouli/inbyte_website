@@ -27,7 +27,7 @@ function App() {
       <div className="App">
         <div>
           <Routes>
-            <Route exact path="/inbyte_website" element={<Footer />}></Route>
+            <Route exact path="/" element={<Footer />}></Route>
             <Route
               exact
               path="/termsandconditions"
