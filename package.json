@@ -1,9 +1,8 @@
 {
-  "homepage": "https://inbytetechnologies.com",
+  "homepage": "https://namburumouli.github.io/inbyte_website",
   "name": "inbyte-website",
   "version": "0.1.0",
-  "private": true,
-  "proxy":"https://e991-2405-201-c01c-1031-443a-da99-6dab-ca3e.in.ngrok.io",
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.0.1",
