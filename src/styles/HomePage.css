@@ -243,6 +243,9 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .homepage{
+    zoom: 90%;
+  }
   .homepage .homeVideo-wrapper {
     height: 100%;
     display: inline;
@@ -266,15 +269,15 @@
   }
 
   .homepage .homepagedescp {
-    margin-top: 95%;
+    margin-top: 90%;
     font-size: small;
-    margin-left: 15%;
+    margin-left: 12%;
     margin-right: 5%;
   }
 
   .homepage .homepageimage {
     zoom: 35%;
-    margin-top: 120%;
+    margin-top: 110%;
     margin-left: -10%;
   }
 }
