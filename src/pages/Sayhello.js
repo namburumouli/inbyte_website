@@ -146,12 +146,12 @@ function Sayhello() {
           <h1 className="saytext">Say</h1>
           <div className="flex">
             <img className="image" src={Mailimage} alt="mailimage" />
-            <h1 className="info">ask@inbyte.com</h1>
+            <h1 className="info">ask@inbytetechnologies.com</h1>
           </div>
           <div className="flex">
             <img className="image" src={PhoneImage} alt="phoneimage" />
             <button className="sayhellobutton">
-              <h1 className="info">898537XXXX</h1>
+              <h1 className="info">+91 8919287529</h1>
             </button>
           </div>
         </div>

@@ -48,7 +48,8 @@ function Navbar() {
 
   return (
     
-    <div className={`navbar ${show && `nav_display`}`}>
+    
+    <div className={`navbar ${show && `nav_display`}`}>;
       <div className="leftSide img">
         <img src={Logo} alt="logo" />
       </div>

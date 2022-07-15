@@ -10,7 +10,7 @@ import HomePage from "./pages/HomePage";
 import Footer from "./pages/Footer";
 import WhatWeDoPage from "./pages/WhatWeDoPage";
 import LandingScreen from "./pages/splashScreen";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, HashRouter } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import { HashLink as Link } from "react-router-hash-link";
 import { useEffect, useState } from "react";
@@ -18,30 +18,29 @@ import { act } from "react-dom/test-utils";
 import { BrowserView, MobileView } from "react-device-detect";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import SplashScreen from "./pages/splashScreen";
 
 function App() {
   const [active, setActive] = useState("visibility");
 
   return (
-    <BrowserRouter>
-      <div className="App">
-        <div>
-          <Routes>
-            <Route exact path="/" element={<Footer />}></Route>
-            <Route
-              exact
-              path="/termsandconditions"
-              element={<TermsAndConditions />}
-            ></Route>
-            <Route
-              exact
-              path="/privacypolicy"
-              element={<PrivacyPolicy />}
-            ></Route>
-          </Routes>
-        </div>
+    <div className="App">
+      <div>
+        <Routes>
+          <Route exact path="/" element={<Footer/>}></Route>
+          <Route
+            exact
+            path="/termsandconditions"
+            element={<TermsAndConditions />}
+          ></Route>
+          <Route
+            exact
+            path="/privacypolicy"
+            element={<PrivacyPolicy />}
+          ></Route>
+        </Routes>
       </div>
-    </BrowserRouter>
+    </div>
   );
 }
 

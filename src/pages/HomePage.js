@@ -8,6 +8,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Navbar from "../Components/Navbar";
 import "../styles/Navbar.css";
+import styled from 'styled-components'
 
 function HomePage() {
   useEffect(() => {
@@ -36,17 +37,16 @@ function HomePage() {
       <Navbar />
       <div className="homepage" id="home">
         <MobileView>
-          <div></div>
           <div>
             {/* data-aos="fade-right" */}
             <div className="row">
               <div className="homepagemargin">
-                <h1 className="homepagetext">
+                <text className="homepagetext">
                   Transforms
                   <br />
                   <span className="homepagespan">Ideas</span> Into Digital
                   Products.
-                </h1>
+                </text>
                 <h1 className="homepagedescp">
                   We create realistic and futuristic products which offers best
                   digital solutions to make an impact on next-generation.
@@ -76,3 +76,5 @@ function HomePage() {
 }
 
 export default HomePage;
+
+
