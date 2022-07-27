@@ -80,6 +80,7 @@ function Sayhello() {
     }
   };
 
+
   const Label1 = (e) => {
     setName(e.target.value);
     if (e.target.value != "") {
@@ -120,7 +121,10 @@ function Sayhello() {
     setOpen(false);
   };
 
+  console.log(open,"open123")
+
   return (
+  
     <div className="sayhello" id="contactus">
       {/* {loading ? (
         () => {}

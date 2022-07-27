@@ -9,7 +9,7 @@ function WhoWereAre() {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <Whoweare id="about">
+    <Page id="about">
       <Margin>
         <Title>w h o w e a r e</Title>
         <Content>
@@ -26,13 +26,13 @@ function WhoWereAre() {
           outcomes.
         </Desc>
       </Margin>
-    </Whoweare>
+    </Page>
   );
 }
 
 export default WhoWereAre;
 
-const Whoweare = styled.div`
+const Page = styled.div`
   min-height: 100%;
   background-color: black;
 `;
